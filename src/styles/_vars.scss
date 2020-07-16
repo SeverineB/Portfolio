@@ -1,0 +1,48 @@
+// Colors
+
+$background-color: rgb(19, 5, 36);
+$main-color: #ea8817;
+$alt-color: #bd66f2;
+$title-color: #bd66f2;
+
+$blue: #00b7f3;
+$dark-blue: #002471;
+$light-blue: #95faff;
+$pink: #f0509c;
+$light-pink: #ffaea1;
+$purple: #b73cd3;
+$yellow: #ffedaa;
+$dark-purple: #490098;
+
+// MEDIA QUERIES
+
+@mixin m767($size: 767px) {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+  
+  @mixin m1024($size: 1024px) {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+  
+  @mixin m1200($size: 1200px) {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+  
+  @mixin m1600($size: 1600px) {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+
+  @mixin m1900($size: 1900px) {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+

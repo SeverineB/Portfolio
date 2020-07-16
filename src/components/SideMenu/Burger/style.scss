@@ -1,0 +1,14 @@
+@import 'src/styles/vars';
+
+.BurgerSpring.Burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.burgerBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

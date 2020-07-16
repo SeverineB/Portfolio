@@ -1,0 +1,39 @@
+@import 'src/styles/vars';
+
+.about {
+  max-width: 100%;
+  margin: 2em auto;
+  padding: 0 0.5em;
+
+  &-infos {
+    padding: 0.5em;
+    box-shadow:
+    0 0.9px 2.5px rgba(0, 0, 0, 0.011),
+    0 2.2px 5.9px rgba(0, 0, 0, 0.016),
+    0 4.1px 11.1px rgba(0, 0, 0, 0.02),
+    0 7.4px 19.9px rgba(0, 0, 0, 0.024),
+    0 13.8px 37.2px rgba(0, 0, 0, 0.029),
+    0 33px 89px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.about-title {
+  padding-top: 1em;
+  font-size: 2em;
+  color: $light-blue;
+}
+
+.about-content {
+  &-infos {
+    color: $light-pink;
+    text-align: justify;
+    font-family: 'Inter';
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    max-width: 60%;
+  }
+}

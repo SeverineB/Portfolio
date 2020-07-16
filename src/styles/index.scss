@@ -1,0 +1,12 @@
+@import 'reset';
+@import 'vars';
+
+body {
+  font-family: sans-serif;
+  background-color: $background-color;
+}
+
+@font-face {
+  font-family: 'Wonderella';
+  src: url('../../src/assets/fonts/wonderella.ttf');
+}

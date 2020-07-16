@@ -1,0 +1,14 @@
+@import 'src/styles/vars';
+  
+  .overlay {
+    opacity: 0;
+    background-color: white;
+  }
+
+  .overlay.overlay-shown {
+      display: block;
+      opacity: 1;
+      background-color: $light-pink;
+      z-index: 999;
+      transition: opacity 0.5s ease-in-out;
+  }

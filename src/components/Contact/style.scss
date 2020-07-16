@@ -1,0 +1,44 @@
+@import 'src/styles/vars';
+
+.contact {
+  max-width: 100%;
+  padding: 0 0.5em;
+  background-color: rgb(17, 5, 32);
+}
+.contact-title {
+  color: $light-blue;
+  font-size: 2rem;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  color: $light-pink;
+
+  img {
+    width: 2em;
+  }
+}
+
+.contact-mail, .contact-phone {
+  font-size: 2rem;
+
+  a {
+    color: white;
+
+    &:hover {
+      color: #95faff;
+    }
+
+    &:visited {
+      color: white;
+    }
+  }
+}
+
+.contact-phone {
+  font-size: 2rem;
+}

@@ -1,0 +1,59 @@
+@import 'src/styles/vars';
+
+.header-image {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  @include m1600() {
+    width:  50vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  };
+
+  & img {
+    width: 70%;
+    @include m1600() {
+      width: 80%;
+    };
+  }
+
+  .first-image, .second-image, .third-image, .fourth-image, .fifth-image, .sixth-image {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    opacity: 0;
+    animation: fadeIn 1s ease-in;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.second-image {
+    animation-delay: 0.5s;
+  }
+
+.third-image {
+    animation-delay: 1s;
+  }
+
+.fourth-image {
+  animation-delay: 1.5s;
+}
+
+.fifth-image {
+    animation-delay: 2s;
+  }
+
+.sixth-image {
+  animation-delay: 2.5s;
+}
+}
