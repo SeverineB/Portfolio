@@ -2,11 +2,16 @@
 @import 'vars';
 
 body {
-  font-family: sans-serif;
+  font-family: 'Zilla';
   background-color: $background-color;
 }
 
 @font-face {
   font-family: 'Wonderella';
   src: url('../../src/assets/fonts/wonderella.ttf');
+}
+
+@font-face {
+  font-family: 'Zilla';
+  src: url('../../src/assets/fonts/ZillaSlab-Regular.ttf');
 }
