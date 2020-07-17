@@ -1,9 +1,13 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import PropTypes from 'prop-types';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import './style.scss';
+
+import githubIcon from '../../assets/icons/githubWhite.svg';
+/* import GithubIcon from '../../assets/icons/githubWhite.svg'; */
 
 AOS.init();
 
@@ -13,9 +17,8 @@ const Project = ({
   alt,
   description,
   technos,
-  isShown,
   githublink,
-  link
+  link,
 }) => {
   return (
     <div className="projet-item" data-aos="zoom-in">
@@ -31,7 +34,14 @@ const Project = ({
               {name}
             </h3>
             <p className="projet-item-meta-description">
-              {technos} - {description}
+              {description}
+            </p>
+            <p className="projet-item-meta-technos">
+              {technos}
+            </p>
+            <p className="projet-item-meta-link">
+              <a href={githublink}><img src={githubIcon} alt="github" /></a>
+              <a href={link}><img src={githubIcon} alt="github" /></a>
             </p>
           </div>
         </div>
@@ -48,6 +58,7 @@ Project.propTypes = {
   technos: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   isShown: PropTypes.bool.isRequired,
+  githublink: PropTypes.string.isRequired,
 };
 
 export default Project;

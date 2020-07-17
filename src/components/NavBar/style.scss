@@ -5,26 +5,71 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 4em;
+  height: 5em;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
+  color: $alt-pink;
   display: none;
+}
+
+.fixed {
+  background-color: $alt-pink;
+  opacity: 0.9;
+  z-index: 2000;
+  a:visited {
+    color: rgb(19, 5, 36);
+  }
 
   .doubleDashed {
-    width: 120px;
-    height: 40px;
-    color: $light-pink;
-    padding: 0 14px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+    color: $background-color;
 }
+
+  .doubleDashed::before,
+  .doubleDashed::after {
+    background-color: $background-color;
+}
+
+}
+
+@media (min-width: 767px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    height: 4em;
+
+    &-item {
+      padding: 0 1em;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &-item {
+      padding: 1em 1em;
+    }
+   
+    .doubleDashed {
+      width: 7em;
+      height: 40px;
+      color: $alt-pink;
+      padding: 0 14px;
+      text-align: center;
+      line-height: 1.5em;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+  }
 
   .doubleDashed::before,
   .doubleDashed::after {
@@ -37,27 +82,27 @@
     transition: transform 0.4s ease-in-out;
 }
 
-.doubleDashed::before {
-    top: 0;
-    transform: translateX(-100%);
-}
+  .doubleDashed::before {
+      top: 0;
+      transform: translateX(-100%);
+  }
 
-.doubleDashed::after {
-    bottom: 0;
-    transform: translateX(100%);
-}
+  .doubleDashed::after {
+      bottom: 0;
+      transform: translateX(100%);
+  }
 
-.doubleDashed:hover::after,
-.doubleDashed:hover::before {
-    transform: translateX(0);
-}
+  .doubleDashed:hover::after,
+  .doubleDashed:hover::before {
+      transform: translateX(0);
+  }
 
   a:visited {
     color: $alt-color;
   }
 
   &-item {
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-decoration: none;
     color: $main-color;
 
@@ -72,47 +117,24 @@
 }
 
 .fixed {
-  background-color: $light-pink;
+  background-color: $alt-pink;
   z-index: 2000;
   a:visited {
     color: rgb(19, 5, 36);
   }
 
   .doubleDashed {
-    color: $alt-color;
+    color: $background-color;
 }
 
   .doubleDashed::before,
   .doubleDashed::after {
-    background-color: $alt-color;
+    background-color: $background-color;
 }
-
-}
-
-@media (min-width: 600px) {
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &-item {
-      padding: 0 1em;
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  .navbar {
-    display: flex;
-    align-items: center;
 
     &-item {
       padding: 0 3em;
     }
-  }
-
-  .fixed {
-    animation: moveDown 0.5s ease-in-out;
   }
 }
 

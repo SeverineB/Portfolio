@@ -4,6 +4,16 @@
   max-width: 100%;
   margin: 2em auto;
   padding: 0 0.5em;
+  @include m767() {
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 4em;
+   };
+  @include m1024() {
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 7em;
+   };
 
   &-infos {
     padding: 0.5em;
@@ -15,26 +25,52 @@
     0 13.8px 37.2px rgba(0, 0, 0, 0.029),
     0 33px 89px rgba(0, 0, 0, 0.04);
   }
+
+  &-title {
+    font-family: 'Pink Tinge';
+    text-align: left;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    font-size: 2em;
+    color: $light-blue;
+    position: relative;
+    @include m1024() {
+      margin-right: -20%;
+     };
+  }
 }
 
-.about-title {
-  padding-top: 1em;
-  font-size: 2em;
-  color: $light-blue;
+.about-title::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 30%;
+  height: 1px;
+  background: $light-pink;
+  top: -0.4em;
+  left: 60%;
+  margin-left: 0.5em;
+  @include m767() {
+    left: 48%;
+    width: 40%;
+  };
+  @include m1024() {
+    left: 30%;
+    width: 40%;
+  };
 }
 
 .about-content {
   &-infos {
     color: $light-pink;
     text-align: justify;
-    font-family: 'Zilla';
+    font-family: 'Rubik';
     font-size: 1.2em;
     font-weight: 500;
+    @include m1024() {
+     font-size: 1.4em;
+     margin-top: 1em;
+    };
   }
 }
 
-@media (min-width: 1024px) {
-  .about {
-    max-width: 60%;
-  }
-}

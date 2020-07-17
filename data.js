@@ -33,7 +33,7 @@ export default {
       alt: 'baskets',
       description: 'Site e-commerce de vente de chaussures',
       technos: 'PHP',
-      githublink: '',
+      githublink: 'https://github.com/SeverineB/Oshop',
       link: '',
     },
     {
@@ -43,7 +43,7 @@ export default {
       alt: 'blog',
       description: 'Blog collaboratif sur des sujets liés au développement web',
       technos: 'PHP',
-      githublink: '',
+      githublink: 'https://github.com/SeverineB/Oblog',
       link: '',
     },
     {
@@ -53,7 +53,7 @@ export default {
       alt: 'todolist',
       description: 'Todolist avec gestion des tâches en BDD grâce à une API',
       technos: 'PHP - Javascript - API',
-      githublink: '',
+      githublink: 'https://github.com/SeverineB/Todolist',
       link: '',
     },
     {
@@ -63,7 +63,7 @@ export default {
       alt: 'blog react',
       description: 'Blog créé avec React sur des sujets liés au développement web',
       technos: 'React - SASS',
-      githublink: '',
+      githublink: 'https://github.com/SeverineB/BlogReact',
       link: '',
     },
     {
@@ -73,7 +73,7 @@ export default {
       alt: 'chatroom',
       description: 'Application de chat créée avec React/Redux et socket.io pour les WebSockets',
       technos: 'React - Redux - SASS - Socket.io',
-      githublink: '',
+      githublink: 'https://github.com/SeverineB/Chat',
       link: '',
     },
     {

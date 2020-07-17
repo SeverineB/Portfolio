@@ -7,8 +7,13 @@
 
   .overlay.overlay-shown {
       display: block;
-      opacity: 1;
+      opacity: 0.9;
       background-color: $light-pink;
       z-index: 999;
       transition: opacity 0.5s ease-in-out;
+
+     a {
+       transform: translateY(30%);
+       transition: transform 0.3s ease-in-out;
+     }
   }

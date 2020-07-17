@@ -2,9 +2,14 @@
 @import 'vars';
 
 body {
-  font-family: 'Zilla';
-  background-color: $background-color;
+  font-family: 'Rubik';
+  background-color: $background-color; 
 }
+
+*{
+  scrollbar-width: thin;
+  scrollbar-color: #ffaea1 rgb(19, 5, 36); 
+} 
 
 @font-face {
   font-family: 'Wonderella';
@@ -14,4 +19,48 @@ body {
 @font-face {
   font-family: 'Zilla';
   src: url('../../src/assets/fonts/ZillaSlab-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Pink Tinge';
+  src: url('../../src/assets/fonts/PinkTingeRegular.ttf');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../../src/assets/fonts/Rubik-Regular.ttf');
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #95faff, #ffaea1, #f0509c);
+ /*  border: 0px none #ffffff; */
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }

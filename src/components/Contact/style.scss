@@ -3,35 +3,89 @@
 .contact {
   max-width: 100%;
   padding: 0 0.5em;
-  background-color: rgb(17, 5, 32);
+  margin-top: 4em;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  @include m767() {
+    width: 70%;
+    margin-left: 25%;
+    height: 30vh;
+    margin-top: 4em;
+   };
+  @include m1024() {
+    width: 40%;
+    margin-left: 45%;
+    height: 30vh;
+    margin-top: 7em;
+   };
 }
 .contact-title {
   color: $light-blue;
   font-size: 2rem;
+  text-align: left;
+  padding-left: 0.5em;
+  @include m767() {
+    width: 100%;
+    text-align: right;
+    padding-right: 1em;
+  };
+  @include m1024() {
+    width: 100%;
+    text-align: right;
+  };
+
+  &::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 40%;
+    height: 1px;
+    background: $light-pink;
+    top: -0.4em;
+    left: 50%;
+    margin-left: 0.5em;
+    @include m767() {
+      width: 40%;
+      left: 15%;
+    };
+    @include m1024() {
+      width: 50%;
+      left: 18%;
+    };
+  }
 }
 
 .contact-list {
   display: flex;
   justify-content: space-around;
   width: 60%;
-  margin: 0 auto;
+  margin: auto auto;
   text-align: left;
   color: $light-pink;
-
+  @include m767() {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    };
+  @include m1024() {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    };
+ 
   img {
     width: 2em;
+    @include m1024() {
+      width: 3em;
+    };
   }
 }
 
 .contact-mail, .contact-phone {
-  font-size: 2rem;
 
   a {
     color: white;
-
-    &:hover {
-      color: #95faff;
-    }
 
     &:visited {
       color: white;
@@ -39,6 +93,3 @@
   }
 }
 
-.contact-phone {
-  font-size: 2rem;
-}

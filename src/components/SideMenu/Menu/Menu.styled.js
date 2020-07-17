@@ -7,15 +7,12 @@ export const StyledMenu = styled.nav`
   justify-content: center;
   background: #ffaea1;
   height: 100vh;
-  width: 90%;
+  width: 100%;
   text-align: center;
   padding: 2rem;
   position: absolute;
   top: 0;
   left: 0;
-  /*transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
-  transform: ${({ open }) => open ? 'display: block' : 'display: none'};
-  transition: transform 0.3s ease-in-out;*/
   z-index: 999;
   
   @media (min-width: 1024px) {

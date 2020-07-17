@@ -5,6 +5,9 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  @include m1600() {
+    display: none;
+  };
 }
 
 .burgerBox {

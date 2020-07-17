@@ -20,7 +20,6 @@ const Hard = ({
 );
 
 Hard.propTypes = {
- /*  icon: PropTypes.string.isRequired, */
   icon: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
