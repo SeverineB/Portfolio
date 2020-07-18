@@ -29,7 +29,7 @@ export default {
     {
       id: 1,
       name: 'Oshop',
-      thumbnail: './images/Oshop-thumbnail.jpg',
+      thumbnail: './assets/images/Oshop-thumbnail.jpg',
       alt: 'baskets',
       description: 'Site e-commerce de vente de chaussures',
       technos: 'PHP',
@@ -39,7 +39,7 @@ export default {
     {
       id: 2,
       name: 'Oblog',
-      thumbnail: './images/Oblog-capture.png',
+      thumbnail: './assets/images/Oblog-capture.png',
       alt: 'blog',
       description: 'Blog collaboratif sur des sujets liés au développement web',
       technos: 'PHP',
@@ -49,7 +49,7 @@ export default {
     {
       id: 3,
       name: 'Todolist',
-      thumbnail: './images/Todolist-capture.png',
+      thumbnail: './assets/images/Todolist-capture.png',
       alt: 'todolist',
       description: 'Todolist avec gestion des tâches en BDD grâce à une API',
       technos: 'PHP - Javascript - API',
@@ -59,7 +59,7 @@ export default {
     {
       id: 4,
       name: 'Blog React',
-      thumbnail: './images/BlogReact-thumbnail.PNG',
+      thumbnail: './assets/images/BlogReact-thumbnail.PNG',
       alt: 'blog react',
       description: 'Blog créé avec React sur des sujets liés au développement web',
       technos: 'React - SASS',
@@ -69,7 +69,7 @@ export default {
     {
       id: 5,
       name: 'Chatroom',
-      thumbnail: './images/Chatroom-thumbnail.PNG',
+      thumbnail: './assets/images/Chatroom-thumbnail.PNG',
       alt: 'chatroom',
       description: 'Application de chat créée avec React/Redux et socket.io pour les WebSockets',
       technos: 'React - Redux - SASS - Socket.io',

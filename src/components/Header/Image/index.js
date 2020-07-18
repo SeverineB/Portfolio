@@ -2,12 +2,12 @@ import React from 'react';
 
 import './style.scss';
 
-import image from '../../../assets/images/catlightblue.svg';
-import image2 from '../../../assets/images/catlightblue2.svg';
-import image3 from '../../../assets/images/catlightblue3.svg';
-import image4 from '../../../assets/images/catlightblue4.svg';
-import image5 from '../../../assets/images/catlightblue5.svg';
-import image6 from '../../../assets/images/catlightblue6.svg';
+import image from '../../../assets/catlightblue.svg';
+import image2 from '../../../assets/catlightblue2.svg';
+import image3 from '../../../assets/catlightblue3.svg';
+import image4 from '../../../assets/catlightblue4.svg';
+import image5 from '../../../assets/catlightblue5.svg';
+import image6 from '../../../assets/catlightblue6.svg';
 
 const Image = () => {
   return (
@@ -19,7 +19,7 @@ const Image = () => {
       <img src={image5} className="fifth-image fadeIn" alt="orange cat vector" />
       <img src={image6} className="sixth-image fadeIn" alt="orange cat vector" />
     </div>
-  )
+  );
 };
 
 export default Image;
