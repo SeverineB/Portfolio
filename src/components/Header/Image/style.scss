@@ -4,16 +4,23 @@
   position: relative;
   width: 100vw;
   height: 50vh;
-  @include m1600() {
-    width:  50vw;
-    height: 80vh;
+  @include m1024() {
+    width:  60vw;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
   };
+  @include m1600() {
+    width:  50vw;
+    height: 60vh;
+  };
 
   & img {
     width: 70%;
+    @include m1024() {
+      width: 80%;
+    };
     @include m1600() {
       width: 80%;
     };
@@ -27,6 +34,8 @@
     animation: fadeIn 1s ease-in;
     animation-fill-mode: forwards;
   }
+
+  // ANIMATION FADE HEADER IMAGE
 
 @keyframes fadeIn {
   from {

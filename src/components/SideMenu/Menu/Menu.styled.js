@@ -5,7 +5,7 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #ffaea1;
+  background: #64ffda;
   height: 100vh;
   width: 100%;
   text-align: center;
@@ -13,29 +13,24 @@ export const StyledMenu = styled.nav`
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 999;
+  opacity: 0.9;
+  
   
   @media (min-width: 1024px) {
     width: 30%;
   }
 
   a {
-    font-size: 2rem;
+    font-size: 1.2em;
+    font-family: "Montserrat";
     padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
     color: #130524;
     text-decoration: none;
-   /*  transition: color 0.3s linear; */
-    
-    @media (max-width: ) {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-
+  
     &:hover {
       color: #490098;
-    /*   transform: translateX(+2%);
       transition: transform 0.2s ease-in-out; */
     }
   }

@@ -14,13 +14,20 @@
     margin-top: 4em;
    };
   @include m1024() {
+    width: 50%;
+    margin-left: 15%;
+    height: 30vh;
+    margin-top: 7em;
+   };
+   @include m1600() {
     width: 40%;
-    margin-left: 45%;
+    margin-left: 15%;
     height: 30vh;
     margin-top: 7em;
    };
 }
 .contact-title {
+  font-family: "BioRhyme";
   color: $light-blue;
   font-size: 2rem;
   text-align: left;
@@ -32,26 +39,34 @@
   };
   @include m1024() {
     width: 100%;
-    text-align: right;
+    text-align: left;
+  };
+  @include m1600() {
+    width: 100%;
+    text-align: left;
   };
 
   &::after {
     content: '';
     display: block;
     position: relative;
-    width: 40%;
+    width: 30%;
     height: 1px;
     background: $light-pink;
     top: -0.4em;
-    left: 50%;
+    left: 60%;
     margin-left: 0.5em;
     @include m767() {
       width: 40%;
       left: 15%;
     };
     @include m1024() {
-      width: 50%;
-      left: 18%;
+      width: 30%;
+      left: 50%;
+    };
+    @include m1600() {
+      width: 40%;
+      left: 35%;
     };
   }
 }
@@ -73,9 +88,18 @@
     align-items: center;
     justify-content: space-around;
     };
+  @include m1600() {
+    width: 40%;
+    margin-left: 6em;
+    };
  
   img {
     width: 2em;
+    &:hover {
+      path {
+        fill: #64ffda;
+      }
+    }
     @include m1024() {
       width: 3em;
     };
@@ -83,7 +107,6 @@
 }
 
 .contact-mail, .contact-phone {
-
   a {
     color: white;
 

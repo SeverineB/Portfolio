@@ -1,8 +1,14 @@
 @import 'src/styles/vars';
   
   .overlay {
+    display: none;
     opacity: 0;
     background-color: white;
+    transition: opacity 0.5s ease-in-out;
+    a {
+      transform: translateY(0);
+      transition: transform 0.3s ease-in-out;
+    }
   }
 
   .overlay.overlay-shown {

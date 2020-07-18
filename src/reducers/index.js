@@ -1,5 +1,6 @@
 import {
   TOGGLE_OPEN,
+  TOGGLE_CONTACT_MENU,
   CLOSE_SCROLL,
   OPEN_SCROLL,
   CLOSE_MENU,
@@ -12,6 +13,8 @@ const initialState = {
   subtitle: datas.subtitle,
   email: datas.email,
   phone: datas.phone,
+  training: datas.training,
+  trainingList: datas.trainingList,
   links: datas.links,
   projets: datas.projets,
   isShown: false,
@@ -20,6 +23,7 @@ const initialState = {
   socials: datas.socials,
   infos: datas.about,
   open: false,
+  menuOpen: false,
   fixed: false,
 };
 
@@ -29,6 +33,11 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         open: !state.open,
+      };
+    case TOGGLE_CONTACT_MENU:
+      return {
+        ...state,
+        menuOpen: !state.menuOpen,
       };
     case CLOSE_SCROLL:
       return {

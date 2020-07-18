@@ -1,0 +1,29 @@
+@import 'src/styles/vars';
+
+.contact-button {
+  width: 2em;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.contact-menu {
+  display: none;
+
+  &-items {
+    img {
+      width: 1.4em;
+    }
+  }
+}
+
+.opened {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}

@@ -12,9 +12,11 @@ const Skills = ({ skills, softs }) => {
       <h2 className="skills-list-title">Compétences</h2>
       <div className="skills-list-items">
         <h3 className="skills-list-items-title">Technologies</h3>
-        {skills.map((skill) => (
-          <Hard key={skill.id} {...skill} />
-        ))}
+        <div className="skills-list-items-list">
+          {skills.map((skill) => (
+            <Hard key={skill.id} {...skill} />
+          ))}
+        </div>
       </div>
       <div className="soft-list-items">
         <h3 className="soft-list-items-title">Savoir-être</h3>

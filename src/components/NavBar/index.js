@@ -11,7 +11,6 @@ const NavBar = ({
   openScroll,
   closeScroll,
 }) => {
-  console.log('links vaut', links);
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 200) {
