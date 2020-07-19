@@ -14,16 +14,29 @@
     margin-top: 4em;
    };
   @include m1024() {
-    width: 40%;
+    width: 50%;
     margin-left: 15%;
+    margin-top: 7em;
+   };
+   @include m1600() {
+    width: 40%;
+    margin-top: 7em;
+   };
+   @include m1900() {
+    width: 40%;
     margin-top: 7em;
    };
 
   &-title {
+    font-family: "BioRhyme";
     color: $light-blue;
     font-size: 2rem;
     text-align: left;
     padding-left: 0.5em;
+    margin-bottom: 1em;
+    @include m1024() {
+      margin-bottom: 2em;
+     };
     @include m1600() {
       margin-bottom: 3em;
      };
@@ -32,30 +45,52 @@
       content: '';
       display: block;
       position: relative;
-      width: 40%;
+      width: 30%;
       height: 1px;
       background: $light-pink;
       top: -0.4em;
-      left: 50%;
+      left: 60%;
       margin-left: 0.5em;
       @include m1024() {
+        left: 50%;
+        width: 45%;
+       };
+       @include m1600() {
+        left: 35%;
+        width: 50%;
+       };
+       @include m1900() {
         left: 30%;
-        width: 40%;
+        width: 65%;
        };
     }
   }
 
   &-items {
-    padding: 0.5em;
+    padding: 1.5em;
+    font-family: 'Montserrat';
     border: 0.1em solid $light-pink;
     margin-top: 0.5em;
     flex-wrap: wrap;
-    font-size: 2rem;
+    justify-content: center;
     color: $light-pink;
+    @include m1600() {
+      width: 80%;
+      margin: 0 auto;
+     };
 
     h3 {
-      font-size: 0.8em;
+      font-size: 1.2em;
       margin-bottom: 0.5em;
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
     }
   }
 }
@@ -66,40 +101,47 @@
   line-height: 0.1em;
 
   &-icon {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin: 0 0;
 
     path {
-      fill: #95faff;
+      fill: #64ffda;
+    }
+
+    &:hover {
+      path {
+        fill: #ffaea1;
+      }
+  
     }
   }
 
   &-name {
     margin-top: 0.5em;
     color: $light-pink;
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
 }
 
 .soft-list-items {
   padding: 0.5em;
   border: 0.1em solid $light-pink;
+  color: $light-pink;
+  font-family: 'Montserrat';
   margin-top: 0.5em;
-  font-size: 2rem;
+  @include m1600() {
+    width: 80%;
+    margin: 0.5em auto;
+   };
 
   h3 {
     color: $light-pink;
     margin: 0.5em auto;
-    font-size: 0.8em;
+    font-size: 1.2em;
   }
 }
 
 .softs-item {
   flex-wrap: wrap;
-  font-size: 1rem;
-  color: $light-pink;
-
-  &:hover {
-    transform: scaleY(1.2);
-  }
+  font-size: 0.9em;
 }

@@ -4,10 +4,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  bottom: 0;
+  bottom: 2em;
   width: 100%;
-  background-color: rgb(17, 5, 32);
-  color: white;
+  color: $light-pink;
 
   &-socials {
     display: flex;
@@ -25,7 +24,7 @@
   margin: 1em;
 
   a {
-    color: white;
+    color: $light-pink;
     padding: 0 1em;
   }
   

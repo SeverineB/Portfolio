@@ -7,7 +7,10 @@ import 'aos/dist/aos.css';
 import './style.scss';
 
 import githubIcon from '../../assets/icons/githubWhite.svg';
-/* import GithubIcon from '../../assets/icons/githubWhite.svg'; */
+import githubIconB from '../../assets/icons/githubB.svg';
+import linkIcon from '../../assets/icons/link.svg';
+
+/* import GithubIcon from '../../assets/icons/githubB.svg'; */
 
 AOS.init();
 
@@ -27,25 +30,42 @@ const Project = ({
         className="projet-item-thumbnail"
         alt={alt}
       />
-      <a href="#">
-        <div className="overlay">
-          <div className="projet-item-meta">
-            <h3 className="projet-item-meta-title">
-              {name}
-            </h3>
-            <p className="projet-item-meta-description">
-              {description}
-            </p>
-            <p className="projet-item-meta-technos">
-              {technos}
-            </p>
-            <p className="projet-item-meta-link">
-              <a href={githublink}><img src={githubIcon} alt="github" /></a>
-              <a href={link}><img src={githubIcon} alt="github" /></a>
-            </p>
-          </div>
+      <div className="overlay">
+        <div className="overlay-meta">
+          <h3 className="overlay-meta-title">
+            {name}
+          </h3>
+          <p className="overlay-meta-description">
+            {description}
+          </p>
+          <p className="overlay-meta-technos">
+            {technos}
+          </p>
+          <p className="overlay-meta-link">
+            <a href={githublink}><img src={githubIcon} alt="github" /></a>
+            <a href={link}><img src={linkIcon} alt="github" /></a>
+          </p>
         </div>
-      </a>
+      </div>
+      <div className="infos">
+        <div className="infos-meta">
+          <h3 className="infos-meta-title">
+            {name}
+          </h3>
+          <p className="infos-meta-description">
+            {description}
+          </p>
+          <p className="infos-meta-technos">
+            {technos.map((techno) => (
+              <p className="techno">{techno}</p>
+            ))}
+          </p>
+          <p className="infos-meta-link">
+            <a href={githublink}><img src={githubIconB} alt="github" /></a>
+            <a href={link}><img src={linkIcon} alt="github" /></a>
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
@@ -55,7 +75,11 @@ Project.propTypes = {
   thumbnail: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  technos: PropTypes.string.isRequired,
+  technos: PropTypes.arrayOf(
+    PropTypes.shape({
+      techno: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
   link: PropTypes.string.isRequired,
   isShown: PropTypes.bool.isRequired,
   githublink: PropTypes.string.isRequired,

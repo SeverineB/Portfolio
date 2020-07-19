@@ -1,8 +1,12 @@
 import {
   TOGGLE_OPEN,
+  TOGGLE_CONTACT_MENU,
+  CLOSE_CONTACT_MENU,
   CLOSE_SCROLL,
   OPEN_SCROLL,
   CLOSE_MENU,
+  SHOW_BUTTON,
+  HIDE_BUTTON,
 } from '../actions';
 
 import datas from '../../data';
@@ -12,6 +16,8 @@ const initialState = {
   subtitle: datas.subtitle,
   email: datas.email,
   phone: datas.phone,
+  training: datas.training,
+  trainingList: datas.trainingList,
   links: datas.links,
   projets: datas.projets,
   isShown: false,
@@ -20,7 +26,9 @@ const initialState = {
   socials: datas.socials,
   infos: datas.about,
   open: false,
+  menuOpen: false,
   fixed: false,
+  buttonShown: false,
 };
 
 const reducer = (state = initialState, action = {}) => {
@@ -29,6 +37,11 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         open: !state.open,
+      };
+    case TOGGLE_CONTACT_MENU:
+      return {
+        ...state,
+        menuOpen: !state.menuOpen,
       };
     case CLOSE_SCROLL:
       return {
@@ -44,6 +57,21 @@ const reducer = (state = initialState, action = {}) => {
       return {
         ...state,
         open: false,
+      };
+    case CLOSE_CONTACT_MENU:
+      return {
+        ...state,
+        menuOpen: false,
+      };
+    case SHOW_BUTTON:
+      return {
+        ...state,
+        buttonShown: true,
+      };
+    case HIDE_BUTTON:
+      return {
+        ...state,
+        buttonShown: false,
       };
     default:
       return state;

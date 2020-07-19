@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 import './style.scss';
 
-import Link from './Link';
+import NavLink from './NavLink';
 
 const NavBar = ({
   links,
@@ -11,7 +12,6 @@ const NavBar = ({
   openScroll,
   closeScroll,
 }) => {
-  console.log('links vaut', links);
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 200) {
@@ -27,7 +27,7 @@ const NavBar = ({
   return (
     <div className={fixed === true ? 'navbar fixed' : 'navbar'}>
       {links.map((link) => (
-        <Link key={link.id} {...link} />
+        <NavLink key={link.id} {...link} />
       ))}
     </div>
   );

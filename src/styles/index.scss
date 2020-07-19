@@ -6,10 +6,10 @@ body {
   background-color: $background-color; 
 }
 
-*{
+* {
   scrollbar-width: thin;
-  scrollbar-color: #ffaea1 rgb(19, 5, 36); 
-} 
+  scrollbar-color: #64ffda rgb(19, 5, 36); 
+}
 
 @font-face {
   font-family: 'Wonderella';
@@ -31,6 +31,16 @@ body {
   src: url('../../src/assets/fonts/Rubik-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../src/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'BioRhyme';
+  src: url('../../src/assets/fonts/BioRhyme-Regular.ttf');
+}
+
 ::-webkit-scrollbar {
   width: 0.5em;
   height: 2px;
@@ -40,7 +50,7 @@ body {
   height: 0px;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #95faff, #ffaea1, #f0509c);
+  background: linear-gradient(to bottom, #64ffda, #ffaea1, #f0509c);
  /*  border: 0px none #ffffff; */
   border-radius: 50px;
 }

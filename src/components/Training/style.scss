@@ -1,0 +1,107 @@
+@import 'src/styles/vars';
+
+.training {
+  max-width: 100%;
+  margin: 2em auto;
+  padding: 0 0.5em;
+  @include m767() {
+    width: 70%;
+    margin-left: 25%;
+    margin-top: 4em;
+   };
+  @include m1024() {
+    width: 50%;
+    margin-left: 45%;
+    margin-top: 7em;
+   };
+   @include m1600() {
+    width: 40%;
+    margin-left: 45%;
+    margin-top: 7em;
+   };
+
+   &-infos {
+    color: $light-pink;
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+   }
+
+  &-title {
+    font-family: 'BioRhyme';
+    text-align: left;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    font-size: 2em;
+    color: $light-blue;
+    position: relative;
+    margin-bottom: 1em;
+    @include m767() {
+      width: 100%;
+      text-align: right;
+      padding-right: 1em;
+    };
+    @include m1024() {
+      width: 100%;
+      text-align: right;
+      margin-bottom: 2em;
+    };
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      width: 30%;
+      height: 1px;
+      background: $light-pink;
+      top: -0.4em;
+      left: 60%;
+      margin-left: 0.5em;
+      @include m767() {
+        width: 40%;
+      };
+      @include m1024() {
+        width: 40%;
+        left: 0;
+      };
+      @include m1600() {
+        width: 60%;
+        left: 0;
+      };
+      @include m1900() {
+        width: 65%;
+        left: 0;
+      };
+    }
+  }
+
+  &-list {
+    margin: 0.5em;
+
+    &-item {
+      display: flex;
+      margin-bottom: 0.5em;
+
+      p {
+        text-align: left;
+      }
+
+      img {
+        align-self: flex-start;
+        width: 1em;
+        margin-right: 0.3em;
+      }
+    }
+  }
+
+  &-content {
+    margin: 0.5em;
+    text-align: justify;
+
+    &-item {
+      color: $light-pink;
+      margin-top: 0.5em;
+    }
+  }
+
+  
+}

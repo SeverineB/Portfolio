@@ -35,12 +35,14 @@ module.exports = merge(common, {
               implementation: require('sass'),
             },
           },
+          {
+            loader: "react-svg-loader",
+            options: {
+              jsx: true // true outputs JSX tags
+            }
+          }
         ],
       },
-    /*   {
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
-      }, */
     ],
   },
 

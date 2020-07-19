@@ -8,14 +8,13 @@ import Project from './Project';
 const Projects = ({
   projets,
   isShown,
-/*   handleShown, */
 }) => {
   return (
     <div id="projets" className="projet-list">
       <h2 className="projet-list-title">Projets</h2>
       <div className="projet-list-items">
         {projets.map((projet) => (
-          <Project key={projet.id} isShown={isShown} /* handleShown={handleShown} */ {...projet}/>
+          <Project key={projet.id} isShown={isShown} {...projet} />
         ))}
       </div>
     </div>
@@ -29,7 +28,6 @@ Projects.propTypes = {
     }).isRequired,
   ).isRequired,
   isShown: PropTypes.bool.isRequired,
-/*   handleShown: PropTypes.func.isRequired, */
 };
 
 export default Projects;
