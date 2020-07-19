@@ -19,13 +19,16 @@
     height: 30vh;
     margin-top: 7em;
    };
-   @include m1600() {
+  @include m1600() {
     width: 40%;
     margin-left: 15%;
     height: 30vh;
     margin-top: 7em;
     margin-bottom: 3em;
-   };
+  };
+  @include m1900() {
+    width: 30%;
+  };
 }
 
 .contact-title {
@@ -54,7 +57,7 @@
     position: relative;
     width: 30%;
     height: 1px;
-    background: $light-pink;
+    background: rgb(211, 208, 208, 0.5);
     top: -0.4em;
     left: 60%;
     margin-left: 0.5em;
@@ -70,6 +73,10 @@
       width: 40%;
       left: 35%;
     };
+    @include m1900() {
+      width: 10em;
+      left: 40%;
+    };
   }
 }
 
@@ -79,7 +86,9 @@
   width: 60%;
   margin: auto auto;
   text-align: left;
-  color: $light-pink;
+  color: $light-grey;
+  border: 1px solid rgb(211, 208, 208, 0.5);
+  
   @include m767() {
     flex-direction: row;
     align-items: center;
@@ -94,25 +103,81 @@
     width: 40%;
     margin-left: 2em;
     };
+  @include m1900() {
+    width: 40%;
+    margin-left: 9em;
+    };
   }
 
 .contact-mail, .contact-phone {
   font-size: 3em;
   margin: 1em;
-  color: #64ffda;
 
-  &:hover {
+  svg {
+    width: 2em;
+
     path {
-      fill: #ffaea1;
+      fill: $light-blue;
+      stroke-width: 3;
+      stroke: $light-blue;
+      stroke-dashoffset: 1200;
+      stroke-dasharray: 1200;
     }
- 
-  }
-  a {
-    color: white;
 
-    &:visited {
-      color: white;
+    &:hover path {
+      animation: animate 2s linear forwards;
     }
+
+    &:hover {
+      #part1 {
+        fill: blue;
+        transform:  rotateX(-180deg) rotateY(0);
+      }
+    }
+    @keyframes animate {
+      0% {
+        stroke-dashoffset: 0;
+      }
+      40% {
+        stroke-dashoffset: 1200;	
+      }
+      80% {
+        stroke-dashoffset: 2400;
+        fill: transparent;	
+      }
+      100% {
+        stroke-dashoffset: 2400;
+        fill: $light-blue;	
+      }
+    } 
+
+   /*  #Shape1 {
+      fill: $light-grey;
+    }
+    #Shape2 {
+      fill: blue;
+    }
+    #Shape3 {
+      fill: red;
+    }
+    #Shape4 {
+      fill: yellow;
+    }
+    #Shape5 {
+      fill: purple;
+    }
+    #Shape6 {
+      fill: white;
+    }
+    #Shape7 {
+      fill: rgb(236, 154, 46);
+    }
+    #Shape8 {
+      fill: rgb(243, 57, 218);
+    }
+    #Shape9 {
+      fill: rgb(54, 201, 238);
+    } */
   }
 }
 

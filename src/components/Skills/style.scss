@@ -47,7 +47,7 @@
       position: relative;
       width: 30%;
       height: 1px;
-      background: $light-pink;
+      background: rgb(211, 208, 208, 0.5);
       top: -0.4em;
       left: 60%;
       margin-left: 0.5em;
@@ -61,7 +61,7 @@
        };
        @include m1900() {
         left: 30%;
-        width: 65%;
+        width: 15em;
        };
     }
   }
@@ -69,11 +69,11 @@
   &-items {
     padding: 1.5em;
     font-family: 'Montserrat';
-    border: 0.1em solid $light-pink;
     margin-top: 0.5em;
     flex-wrap: wrap;
     justify-content: center;
-    color: $light-pink;
+    color: $light-grey;
+    border: 1px solid rgb(211, 208, 208, 0.5);
     @include m1600() {
       width: 80%;
       margin: 0 auto;
@@ -85,6 +85,7 @@
     }
 
     &-list {
+     
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -112,21 +113,20 @@
       path {
         fill: #ffaea1;
       }
-  
     }
   }
 
   &-name {
     margin-top: 0.5em;
-    color: $light-pink;
+    color: $light-grey;
     font-size: 0.6em;
   }
 }
 
 .soft-list-items {
   padding: 0.5em;
-  border: 0.1em solid $light-pink;
-  color: $light-pink;
+  border: 1px solid rgb(211, 208, 208, 0.5);
+  color: $light-grey;
   font-family: 'Montserrat';
   margin-top: 0.5em;
   @include m1600() {
@@ -135,7 +135,7 @@
    };
 
   h3 {
-    color: $light-pink;
+    color: $light-grey;
     margin: 0.5em auto;
     font-size: 1.2em;
   }

@@ -31,7 +31,7 @@ const Project = ({
         alt={alt}
       />
       <div className="overlay">
-        <div className="overlay-meta">
+        <div className="overlay-meta" data-aos="fade-right">
           <h3 className="overlay-meta-title">
             {name}
           </h3>
@@ -47,8 +47,8 @@ const Project = ({
           </p>
         </div>
       </div>
-      <div className="infos">
-        <div className="infos-meta">
+      <div className="infos" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
+        <div className="infos-meta" data-aos="fade-right">
           <h3 className="infos-meta-title">
             {name}
           </h3>

@@ -14,11 +14,11 @@
     margin-left: 15%;
     margin-top: 7em;
    };
-   @include m1600() {
-    width: 40%;
-    margin-left: 15%;
-    margin-top: 7em;
-   };
+  @include m1600() {
+  width: 40%;
+  margin-left: 15%;
+  margin-top: 7em;
+  };
 
   &-infos {
     padding: 0.5em;
@@ -42,7 +42,7 @@
       position: relative;
       width: 20%;
       height: 1px;
-      background: $light-pink;
+      background: rgb(211, 208, 208, 0.5);
       top: -0.4em;
       left: 70%;
       margin-left: 0.5em;
@@ -57,6 +57,10 @@
       @include m1600() {
         left: 35%;
         width: 40%;
+      };
+      @include m1900() {
+        left: 30%;
+        width: 15em;
       };
      }
   }
@@ -73,6 +77,7 @@
        margin-top: 1em;
       };
     }
+
     &-item {
       margin-top: 0.5em;
     }

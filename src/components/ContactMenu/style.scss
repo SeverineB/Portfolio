@@ -24,6 +24,9 @@ button {
   width: 3em;
   bottom: 0;
   position: fixed;
+  @include m1600() {
+    width: 3.2em;
+    };
 
   img {
     width: 100%;

@@ -7,7 +7,7 @@ import dotIcon from '../../assets/icons/rec.svg';
 
 const Training = ({ trainingList, training }) => {
   return (
-    <div id="training" className="training">
+    <div id="training" className="training" data-aos="zoom-in">
       <h2 className="training-title">Ma formation</h2>
       <div className="training-infos">
         <div className="training-list">

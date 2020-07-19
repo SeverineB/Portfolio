@@ -14,16 +14,19 @@
     margin-left: 45%;
     margin-top: 7em;
    };
-   @include m1600() {
-    width: 40%;
-    margin-left: 45%;
-    margin-top: 7em;
-   };
+  @include m1600() {
+  width: 40%;
+  margin-left: 45%;
+  margin-top: 7em;
+  };
 
    &-infos {
     color: $light-pink;
     font-family: 'Montserrat';
     font-size: 0.9em;
+    @include m1600() {
+      font-size: 1.1em;
+      };
    }
 
   &-title {
@@ -52,7 +55,7 @@
       position: relative;
       width: 30%;
       height: 1px;
-      background: $light-pink;
+      background: rgb(211, 208, 208, 0.5);
       top: -0.4em;
       left: 60%;
       margin-left: 0.5em;
@@ -68,8 +71,8 @@
         left: 0;
       };
       @include m1900() {
-        width: 65%;
-        left: 0;
+        width: 15em;
+        left: 5%;
       };
     }
   }

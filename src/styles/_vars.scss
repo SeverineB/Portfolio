@@ -1,15 +1,13 @@
-// Colors
+// COLORS
 
 $background-color: rgb(19, 5, 36);
-$main-color: #ea8817;
-$alt-color: #bd66f2;
-$title-color: #bd66f2;
 
 $blue: #00b7f3;
 $dark-blue: #002471;
 $light-blue: #64ffda;
 $pink: #f0509c;
 $light-pink: #d3d0d0;
+$light-grey: #d3d0d0;
 $alt-pink: #ffaea1;
 $purple: #b73cd3;
 $yellow: #ffedaa;
@@ -46,4 +44,12 @@ $dark-purple: #490098;
       @content;
     }
   }
+
+  // Transform Origin
+@mixin transform-origin ($originX, $originY) {
+  -webkit-transform-origin: $originX, $originY;
+  -moz-transform-origin: $originX, $originY;
+  -ms-transform-origin: $originX, $originY;
+  transform-origin: $originX, $originY;
+}
 
