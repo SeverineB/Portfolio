@@ -10,13 +10,13 @@
   margin-top: 4em;
   font-family: 'Montserrat';
   @include m767() {
-    width: 70%;
-    margin-left: 25%;
+    width: 100%;
+    margin-left: 0;
     margin-top: 4em;
   };
   @include m1024() {
-    width: 50%;
-    margin-left: 45%;
+    width: 80%;
+    margin-left: 20%;
     margin-top: 7em;
   };
   @include m1600() {
@@ -27,6 +27,7 @@
 
   &-items {
     @include m767() {
+      width: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -74,15 +75,15 @@
         width: 40%;
       };
       @include m1024() {
-        left: 0;
-        width: 65%;
+        left: 10.5em;
+        width: 8em;
       };
       @include m1600() {
-        left: 25%;
-        width: 60%;
+        left: 13em;
+        width: 10em;
       };
       @include m1900() {
-        left: 47%;
+        left: 14em;
         width: 15em;
       };
     }
@@ -95,8 +96,11 @@
   overflow: hidden;
   margin: 2em 0;
   @include m767() {
-    width: 45%;
+    width: 47%;
     margin: 0.5em 0.5em;
+  };
+  @include m1024() {
+    width: 45%;
   };
   @include m1600() {
     width: 60%;
@@ -122,14 +126,18 @@
     top: 0;
     bottom: 0;
     right: 0;
+    padding: 0.2em;
     background-color: rgb(100,255,218, .8);
     color: $background-color;
     font-size: 0.9em;
     z-index: 10;
     opacity: 1;
     transition: all 0.7s ease;
+    &:hover {
+      background-color: rgb(100,255,218, .4);
+    }
     @include m1024() {
-      opacity: 0.8;
+      opacity: 0.9;
     };
     @include m1600() {
       display: none;
@@ -137,9 +145,16 @@
 
     &-meta {
       color: $background-color;
-      width: 70%;
+      width: 80%;
+      height: 100%;
       text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       @include m767() {
+        width: 90%;
+      };
+      @include m1024() {
         font-size: 1em;
       };
       &-title {
@@ -155,7 +170,8 @@
         };
       }
       &-description {
-        font-size: 1.3em;
+        width: 100%;
+        font-size: 1em;
         margin-bottom: 0.5em;
         @include m767() {
           font-size: 1em;
@@ -164,6 +180,15 @@
       &-technos {
         font-size: 1.2em;
         margin-bottom: 0.5em;
+        display: flex;
+        flex-wrap: wrap;
+        .techno {
+          background-color: $background-color;
+          color: $light-blue;
+          padding: 0.3em;
+          margin: 0.1em;
+          border-radius: 14px;
+        }
         @include m767() {
           font-size: 1em;
         };
@@ -172,8 +197,30 @@
       &-link {
         display: flex;
         justify-content: flex-end;
-        img {
-          width: 1em;
+        padding: 0.2em;
+        svg {
+          width: 2em;
+          margin: 0.4em;
+          background-color: none;
+          path {
+            transition: fill 0.5s ease;
+            fill: $background-color;
+            stroke: $background-color;
+            stroke-width: 4%;
+          }
+          &:hover path {
+            fill: $light-blue;
+            background-color: $background-color;
+            stroke: $light-blue;
+            stroke-width: 4%;
+          }
+          &:hover {
+            background-color: $background-color;
+            border-radius: 50%;
+            transform: scale(1.5);
+            transition: background-color 0.5s transform .5s ease;
+            padding: 0.3em;
+          }
         }
       }
     }
@@ -235,15 +282,29 @@
           padding: 0.2em;
           display: flex;
          };
-
-         img {
-           width: 1.6em;
-           margin: 0.2em;
-         }
+         svg {
+          width: 2em;
+          margin: 0.4em;
+          padding: 0.3em;
+          background-color: none;
+          path {
+            transition: fill 0.5s ease;
+            fill: $background-color;
+          }
+          &:hover path {
+            fill: $light-blue;
+            background-color: $background-color;
+          }
+          &:hover {
+            background-color: $background-color;
+            border-radius: 50%;
+            transform: scale(1.5);
+            transition: background-color 0.5s transform .5s ease;
+            padding: 0.5em;
+          }
+        }
       }
     }
-
- 
   }
 
   // ANIMATION TEXT ON HOVER ON MOBILE DEVICE

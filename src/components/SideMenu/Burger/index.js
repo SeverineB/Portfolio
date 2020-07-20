@@ -9,7 +9,7 @@ const BurgerButton = ({ toggleOpen, open }) => {
   return (
     <Spring
       active={open}
-      color={open ? '#64ffda' : '#64ffda'}
+      color={open ? '#130524' : '#64ffda'}
       borderRadius="50"
       width="30"
       lineHeight={3}

@@ -63,16 +63,16 @@
         width: 40%;
       };
       @include m1024() {
-        width: 40%;
-        left: 0;
+        width: 6em;
+        left: -0.5em;
       };
       @include m1600() {
-        width: 60%;
-        left: 0;
+        width: 10em;
+        left: -0.5em;
       };
       @include m1900() {
         width: 15em;
-        left: 5%;
+        left: -2em;
       };
     }
   }

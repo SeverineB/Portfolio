@@ -19,7 +19,34 @@
       transition: opacity 0.5s ease-in-out;
 
      a {
-       transform: translateY(30%);
-       transition: transform 0.3s ease-in-out;
+        transform: translateY(30%);
+        transition: transform 0.3s ease-in-out;
+        &:after {
+          opacity: 0;
+          position: absolute;
+          transition: opacity 1s ease-in-out;
+       }
+        &:before {
+          display: none;
+          position: absolute;
+       }
+
+       &:hover::after {
+        content: url("../../../assets/icons/arrow-left.svg");
+        width: 1.5em;
+        height: 1.5em;
+        top: 1.3em;
+        left: 15em;
+        opacity: 1;
+       }
+       &:hover::before {
+        content: url("../../../assets/icons/arrow-right.svg");
+        display: block;
+        position: absolute;
+        width: 1.5em;
+        height: 1.5em;
+        top: 1.3em;
+        left: 10px;
+       }
      }
   }

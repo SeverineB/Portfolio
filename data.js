@@ -4,7 +4,7 @@ export default {
   email: 'mailto:severine.bianchi78@gmail.com',
   phone: 'tel:0647547806',
   trainingList: [
-    'Formation de 5 mois en téléprésentiel du 27/01/20 au 07/07/20',
+    'Formation de 5 mois en téléprésentiel du 27/01/20 au 07/07/20 avec \<a href="http://www.oclock.io">O\'Clock\</a>',
     '3 mois de socle HTML5/CSS3/PHP/Javascript',
     '1 mois de spécialisation en React/Redux',
     '1 mois de projet en conditions professionnelles',

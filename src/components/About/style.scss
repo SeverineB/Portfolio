@@ -15,10 +15,15 @@
     margin-top: 7em;
    };
   @include m1600() {
-  width: 40%;
-  margin-left: 15%;
-  margin-top: 7em;
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 7em;
   };
+  @include m1900() {
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 9em;
+    };
 
   &-infos {
     padding: 0.5em;
@@ -52,14 +57,14 @@
       };
       @include m1024() {
         left: 50%;
-        width: 30%;
+        width: 8em;
       };
       @include m1600() {
-        left: 35%;
-        width: 40%;
+        left: 9em;
+        width: 10em;
       };
       @include m1900() {
-        left: 30%;
+        left: 9em;
         width: 15em;
       };
      }

@@ -59,7 +59,7 @@ const App = ({ showButton, hideButton, buttonShown }) => {
                       }
                   },
                   "size": {
-                      "value": 3,
+                      "value": 2,
                       "random": true,
                       "anim": {
                           "speed": 2,

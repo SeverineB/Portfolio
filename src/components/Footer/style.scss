@@ -4,13 +4,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  bottom: 2em;
+  bottom: 0;
   width: 100%;
   color: $light-pink;
+  margin-top: 2em;
 
   &-socials {
     display: flex;
     justify-content: center;
+    margin-bottom: 1em;
   }
 
   img {

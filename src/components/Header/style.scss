@@ -6,7 +6,7 @@
     height: 90vh;
   };
   @include m1024() {
-    height: 90vh;
+    height: 70vh;
   };
 }
 
@@ -38,7 +38,7 @@
     flex-direction: column;
     padding: 2em;
     @include m767() {
-      margin-top: 15%;
+      margin-top: 8%;
      };
      @include m1024() {
       align-self: flex-start;

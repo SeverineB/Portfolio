@@ -15,23 +15,19 @@ export const StyledMenu = styled.nav`
   left: 0;
   opacity: 0.9;
   
-  
   @media (min-width: 1024px) {
     width: 30%;
   }
 
   a {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: "Montserrat";
     padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
     color: #130524;
     text-decoration: none;
-  
-    &:hover {
-      color: #490098;
-      transition: transform 0.2s ease-in-out; */
-    }
+    transform: translateX(20%);
+    transition: transform 0.2s ease-in-out;
   }
 `;

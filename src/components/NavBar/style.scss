@@ -11,6 +11,7 @@
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
+  color: $light-blue;
   display: none;
   @include m767() {
     color: $light-blue;
@@ -45,19 +46,16 @@
   }
 
   .doubleDashed {
-    color: $background-color;
-    @include m1024() {
+    color: $light-blue;
+    width: 10em;
+    @include m767() {
       height: 2em;
-      color: $light-blue;
       padding: 0 14px;
       text-align: center;
       line-height: 1.7em;
       cursor: pointer;
       position: relative;
       overflow: hidden;
-    };
-    @include m1900() {
-      width: 10em;
     };
   }
 

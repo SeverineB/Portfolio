@@ -45,11 +45,3 @@ $dark-purple: #490098;
     }
   }
 
-  // Transform Origin
-@mixin transform-origin ($originX, $originY) {
-  -webkit-transform-origin: $originX, $originY;
-  -moz-transform-origin: $originX, $originY;
-  -ms-transform-origin: $originX, $originY;
-  transform-origin: $originX, $originY;
-}
-

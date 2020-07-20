@@ -52,15 +52,15 @@
       left: 60%;
       margin-left: 0.5em;
       @include m1024() {
-        left: 50%;
-        width: 45%;
+        left: 7em;
+        width: 6em;
        };
        @include m1600() {
-        left: 35%;
-        width: 50%;
+        left: 7em;
+        width: 10em;
        };
        @include m1900() {
-        left: 30%;
+        left: 7.5em;
         width: 15em;
        };
     }
