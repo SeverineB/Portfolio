@@ -22,7 +22,7 @@
   @include m1900() {
     width: 40%;
     margin-left: 15%;
-    margin-top: 9em;
+    margin-top: 13em;
     };
 
   &-infos {
@@ -80,6 +80,9 @@
       @include m1024() {
        font-size: 1.1em;
        margin-top: 1em;
+      };
+      @include m1900() {
+        line-height: 1.3em;
       };
     }
 

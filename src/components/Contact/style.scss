@@ -107,86 +107,84 @@
     width: 60%;
     margin-left: 9em;
     };
+
+    &-mail, &-phone {
+      font-size: 2em;
+      margin: 1em;
+
+      svg {
+        width: 2em;
+        @include m1024() {
+          width: 1.6em;
+          font-size: 3em;
+          };
+        @include m1600() {
+          width: 1.8em;
+          };
+        @include m1900() {
+          width: 1.2em;
+          };
+
+        path {
+          fill: $light-blue;
+          stroke-width: 3;
+          stroke: $light-blue;
+          stroke-dashoffset: 1200;
+          stroke-dasharray: 1200;
+        }
+
+        &:hover path {
+          animation: animate 2s linear forwards;
+        }
+
+        &:hover {
+          fill: transparent;
+        }
+
+        @keyframes animate {
+          0% {
+            stroke-dashoffset: 0;
+          }
+          40% {
+            stroke-dashoffset: 1200;	
+          }
+          80% {
+            stroke-dashoffset: 2400;
+            fill: transparent;	
+          }
+          100% {
+            stroke-dashoffset: 2400;
+            fill: $light-blue;	
+          }
+        } 
+
+      /*  #Shape1 {
+          fill: $light-grey;
+        }
+        #Shape2 {
+          fill: blue;
+        }
+        #Shape3 {
+          fill: red;
+        }
+        #Shape4 {
+          fill: yellow;
+        }
+        #Shape5 {
+          fill: purple;
+        }
+        #Shape6 {
+          fill: white;
+        }
+        #Shape7 {
+          fill: rgb(236, 154, 46);
+        }
+        #Shape8 {
+          fill: rgb(243, 57, 218);
+        }
+        #Shape9 {
+          fill: rgb(54, 201, 238);
+        } */
+          }
+        }
   }
-
-.contact-mail, .contact-phone {
-  font-size: 2em;
-  margin: 1em;
-
-  svg {
-    width: 2em;
-    @include m1024() {
-      width: 1.6em;
-      font-size: 3em;
-      };
-    @include m1600() {
-      width: 1.8em;
-      };
-
-    path {
-      fill: $light-blue;
-      stroke-width: 3;
-      stroke: $light-blue;
-      stroke-dashoffset: 1200;
-      stroke-dasharray: 1200;
-    }
-
-    &:hover path {
-      animation: animate 2s linear forwards;
-    }
-
-    &:hover {
-      fill: transparent;
-     /*  #part1 {
-        fill: transparent;
-        transform:  rotateX(-180deg) rotateY(0);
-      } */
-    }
-
-    @keyframes animate {
-      0% {
-        stroke-dashoffset: 0;
-      }
-      40% {
-        stroke-dashoffset: 1200;	
-      }
-      80% {
-        stroke-dashoffset: 2400;
-        fill: transparent;	
-      }
-      100% {
-        stroke-dashoffset: 2400;
-        fill: $light-blue;	
-      }
-    } 
-
-   /*  #Shape1 {
-      fill: $light-grey;
-    }
-    #Shape2 {
-      fill: blue;
-    }
-    #Shape3 {
-      fill: red;
-    }
-    #Shape4 {
-      fill: yellow;
-    }
-    #Shape5 {
-      fill: purple;
-    }
-    #Shape6 {
-      fill: white;
-    }
-    #Shape7 {
-      fill: rgb(236, 154, 46);
-    }
-    #Shape8 {
-      fill: rgb(243, 57, 218);
-    }
-    #Shape9 {
-      fill: rgb(54, 201, 238);
-    } */
-  }
-}
-
