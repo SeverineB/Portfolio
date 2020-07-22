@@ -3,6 +3,7 @@
   .overlay {
     display: none;
     opacity: 0;
+    z-index: 2500;
     background-color: white;
     transition: opacity 0.5s ease-in-out;
     a {
@@ -13,12 +14,13 @@
 
   .overlay.overlay-shown {
       display: block;
-      opacity: 0.9;
+      opacity: 1;
       background-color: $light-pink;
-      z-index: 999;
+      z-index: 2500;
       transition: opacity 0.5s ease-in-out;
 
      a {
+      z-index: 2500;
         transform: translateY(30%);
         transition: transform 0.3s ease-in-out;
         &:after {

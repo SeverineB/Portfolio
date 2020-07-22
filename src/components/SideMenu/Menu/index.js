@@ -1,5 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 import { StyledMenu } from './Menu.styled';
 
 import './style.scss';
@@ -10,7 +13,7 @@ const Menu = ({ open, links, toggleOpen }) => {
       <StyledMenu open={open} className={open ? 'opened' : ''}>
         {links.map((link) => {
           return (
-            <a key={link.name} href={link.path} className="burger-menu-links-item" onClick={toggleOpen}>{link.name}</a>
+            <Link key={link.name} to={link.path} className="burger-menu-links-item" onClick={toggleOpen}>{link.name}</Link>
           );
         })}
       </StyledMenu>

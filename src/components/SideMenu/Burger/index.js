@@ -7,15 +7,18 @@ import './style.scss';
 
 const BurgerButton = ({ toggleOpen, open }) => {
   return (
-    <Spring
-      active={open}
-      color={open ? '#130524' : '#64ffda'}
-      borderRadius="50"
-      width="30"
-      lineHeight={3}
-      lineSpacing={5}
-      onClick={toggleOpen}
-    />
+    <div className="burger-container">
+      <Spring
+        active={open}
+        /* color={open ? '#130524' : '#64ffda'} */
+        color="#64ffda"
+        borderRadius="50"
+        width="30"
+        lineHeight={3}
+        lineSpacing={5}
+        onClick={toggleOpen}
+      />
+    </div>
   );
 };
 

@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 
 import './style.scss';
 
-import dotIcon from '../../assets/icons/rec.svg';
+import TrainingItem from './TrainingItem';
+import TrainingContent from './TrainingContent';
+
+/* import dotIcon from '../../assets/icons/rec.svg'; */
 
 const Training = ({ trainingList, training }) => {
   return (
@@ -13,18 +16,13 @@ const Training = ({ trainingList, training }) => {
         <div className="training-list">
           <ul>
             {trainingList.map((info) => (
-              <li className="training-list-item">
-                <img src={dotIcon} alt="github" />
-                <p>{info}</p>
-              </li>
+              <TrainingItem key={info.content} {...info} />
             ))}
           </ul>
         </div>
         <div className="training-content">
           {training.map((info) => (
-            <p className="training-content-item">
-              {info}
-            </p>
+            <TrainingContent key={info.content} {...info} />
           ))}
         </div>
       </div>
@@ -35,12 +33,12 @@ const Training = ({ trainingList, training }) => {
 Training.propTypes = {
   training: PropTypes.arrayOf(
     PropTypes.shape({
-      info: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
     }).isRequired,
   ).isRequired,
   trainingList: PropTypes.arrayOf(
     PropTypes.shape({
-      info: PropTypes.string.isRequired,
+      content: PropTypes.string.isRequired,
     }).isRequired,
   ).isRequired,
 };

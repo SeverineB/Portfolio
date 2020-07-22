@@ -1,7 +1,5 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-
-import { useOnClickOutside } from '../../hooks';
 
 import contactIcon from '../../assets/icons/contacts.svg';
 import githubIcon from '../../assets/icons/github.svg';
@@ -10,12 +8,9 @@ import twitterIcon from '../../assets/icons/twitter.svg';
 
 import './style.scss';
 
-const ContactMenu = ({ menuOpen, toggleContactMenu, closeContactMenu }) => {
-  /* const node = useRef();
-  useOnClickOutside(node, () => closeContactMenu());
-  console.log('menuOpen vaut', menuOpen); */
+const ContactMenu = ({ menuOpen, toggleContactMenu }) => {
   return (
-    <div className="contact-toggle" /* ref={node} */>
+    <div className="contact-toggle">
       <div className="contact-button">
         <button type="button" onClick={toggleContactMenu}>
           <img src={contactIcon} alt="contact" />
@@ -41,7 +36,6 @@ const ContactMenu = ({ menuOpen, toggleContactMenu, closeContactMenu }) => {
 ContactMenu.propTypes = {
   menuOpen: PropTypes.bool.isRequired,
   toggleContactMenu: PropTypes.func.isRequired,
-  closeContactMenu: PropTypes.func.isRequired,
 };
 
 export default ContactMenu;

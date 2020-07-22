@@ -10,16 +10,18 @@ export const StyledMenu = styled.nav`
   width: 100%;
   text-align: center;
   padding: 2rem;
-  position: absolute;
+  position: fixed;
+  z-index: 2500;
   top: 0;
   left: 0;
-  opacity: 0.9;
+  opacity: 1;
   
   @media (min-width: 1024px) {
     width: 30%;
   }
 
   a {
+    z-index: 2500;
     font-size: 1.3em;
     font-family: "Montserrat";
     padding: 2rem 0;

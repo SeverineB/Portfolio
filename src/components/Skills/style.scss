@@ -85,33 +85,60 @@
     }
 
     &-list {
-     
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      width: 80%;
+      width: 100%;
       height: 100%;
       margin: 0 auto;
+      @include m1900() {
+        width: 80%;
+       };
     }
   }
 }
 
 .skill-item {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin: 0.2em 0.7em;
   line-height: 0.1em;
+
+  svg {
+    width: 2.2em;
+    height: 2.2em;
+  }
+
+  .axios-svg, .sql-svg, .webpack-svg, .yarn-svg {
+    width: 2.4em;
+    height: 4.8em;
+    @include m1900() {
+      height: 5em;
+     };
+  }
 
   &-icon {
     font-size: 1.4em;
     margin: 0 0;
+    color: $light-blue;
 
-    path {
-      fill: #64ffda;
+    .svg-inline--fa {
+      font-size: 2.2em;
+      @include m1900() {
+        font-size: 2.4em;
+       };
     }
 
     &:hover {
+      polygon {
+        fill: #ffaea1;
+      }
       path {
         fill: #ffaea1;
+      }
+      .path-not-hover {
+        fill: none;
       }
     }
   }
@@ -119,7 +146,10 @@
   &-name {
     margin-top: 0.5em;
     color: $light-grey;
-    font-size: 0.6em;
+    font-size: 0.8em;
+    @include m1900() {
+      font-size: 1em;
+     };
   }
 }
 

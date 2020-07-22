@@ -4,16 +4,40 @@ export default {
   email: 'mailto:severine.bianchi78@gmail.com',
   phone: 'tel:0647547806',
   trainingList: [
-    'Formation de 5 mois en téléprésentiel du 27/01/20 au 07/07/20 avec \<a href="http://www.oclock.io">O\'Clock\</a>',
-    '3 mois de socle HTML5/CSS3/PHP/Javascript',
-    '1 mois de spécialisation en React/Redux',
-    '1 mois de projet en conditions professionnelles',
-    'Titre Professionnel Développeur Web et Web mobile Niveau V',
+    {
+      id: 1,
+      content: 'Formation de 5 mois en téléprésentiel du 27/01/20 au 07/07/20 avec O\'Clock',
+    },
+    {
+      id: 2,
+      content: '3 mois de socle HTML5/CSS3/PHP/Javascript',
+    },
+    {
+      id: 3,
+      content: '1 mois de spécialisation en React/Redux',
+    },
+    {
+      id: 4,
+      content: '1 mois de projet en conditions professionnelles',
+    },
+    {
+      id: 5,
+      content: 'Titre Professionnel Développeur Web et Web mobile Niveau V',
+    },
   ],
   training: [
-    'Cette formation m\'a permis d\'acquérir les bonnes pratiques : écrire un code propre, lisible, créer des sites entièrement responsive, savoir chercher les réponses à un problème, et finalement j\'ai appris à apprendre.',
-    'Le dernier mois de formation était consacré à la réalisation d\'un projet en équipe, en suivant la méthode Agile et en conditions professionnelles.',
-    'Au-delà des compétences purement techniques, j\'ai appris à mener un projet de bout en bout, préparer les documents de conception tels que le cahier des charges, les wireframes, définir un MVP, créer les User Stories avec Trello, ainsi que les documents propres à la base de données (MCD et dictionnaire de données).',
+    {
+      id: 1,
+      content: 'Cette formation m\'a permis d\'acquérir les bonnes pratiques : écrire un code propre, lisible, créer des sites entièrement responsive, savoir chercher les réponses à un problème, et finalement j\'ai appris à apprendre.',
+    },
+    {
+      id: 2,
+      content: 'Le dernier mois de formation était consacré à la réalisation d\'un projet en équipe, en suivant la méthode Agile et en conditions professionnelles.',
+    },
+    {
+      id: 3,
+      content: 'Au-delà des compétences purement techniques, j\'ai appris à mener un projet de bout en bout, préparer les documents de conception tels que le cahier des charges, les wireframes, définir un MVP, créer les User Stories avec Trello, ainsi que les documents propres à la base de données (MCD et dictionnaire de données).',
+    },
   ],
   links: [
     {
@@ -56,22 +80,12 @@ export default {
     {
       id: 2,
       name: 'Oshop Backoffice',
-      thumbnail: './assets/images/Oshop-thumbnail.jpg',
+      thumbnail: './assets/images/Oshopback-thumbnail.PNG',
       alt: 'backoffice',
       description: 'Backoffice d\'un site e-commerce avec gestion des produits et des utilisateurs',
       technos: ['PHP', 'Bootstrap', 'MySQL', 'MVC'],
       githublink: 'https://github.com/SeverineB/Oshop-Backoffice',
       link: 'http://oshop-backoffice.severinebianchi.com',
-    },
-    {
-      id: 3,
-      name: 'Oblog',
-      thumbnail: './assets/images/Oblog-capture.png',
-      alt: 'blog',
-      description: 'Blog collaboratif sur des sujets liés au développement web',
-      technos: ['PHP', 'Bootstrap', 'MVC'],
-      githublink: 'https://github.com/SeverineB/Oblog',
-      link: 'http://oblog.severinebianchi.com',
     },
  /*    {
       id: 3,
@@ -84,27 +98,27 @@ export default {
       link: '',
     }, */
     {
-      id: 4,
+      id: 3,
       name: 'Blog React',
       thumbnail: './assets/images/BlogReact-thumbnail.PNG',
       alt: 'blog react',
       description: 'Blog créé avec React sur des sujets liés au développement web',
       technos: ['React', 'SASS'],
       githublink: 'https://github.com/SeverineB/BlogReact',
-      link: '',
+      link: 'http://blog-react.severinebianchi.com',
     },
-    {
-      id: 5,
+   /*  {
+      id: 4,
       name: 'Chatroom',
       thumbnail: './assets/images/Chatroom-thumbnail.PNG',
       alt: 'chatroom',
       description: 'Application de messagerie en temps réel créée avec React/Redux et socket.io pour les WebSockets',
-      technos: ['React', 'Redux', 'SASS','Socket.io'],
+      technos: ['React', 'Redux', 'SASS', 'Socket.io'],
       githublink: 'https://github.com/SeverineB/Chat',
       link: '',
-    },
+    }, */
     {
-      id: 6,
+      id: 5,
       name: 'O\'Recipe',
       thumbnail: './images/Orecipe-thumbnail.PNG',
       alt: 'site de recettes',
@@ -112,6 +126,26 @@ export default {
       technos: ['React', 'Redux', 'SASS', 'Node.js', 'Express'],
       githublink: 'https://github.com/SeverineB/Orecipe',
       link: 'http://orecipes.severinebianchi.com',
+    },
+    {
+      id: 6,
+      name: 'Undefined V.1',
+      thumbnail: './assets/images/Undefined-thumbnail.PNG',
+      alt: 'undefined',
+      description: 'Site plateforme proposant des outils pour les joueurs de jeux de rôle, crée avec React/Redux, et une API créée avec Symfony',
+      technos: ['React', 'Redux', 'Axios', 'SASS', 'Symfony', 'Doctrine'],
+      githublink: 'https://github.com/SeverineB/Undefined',
+      link: 'http://undefined.severinebianchi.com',
+    },
+    {
+      id: 7,
+      name: 'Portfolio V.1',
+      thumbnail: './assets/images/Portfolio-thumbnail.PNG',
+      alt: 'portfolio',
+      description: 'Portfolio codé avec React/Redux, animations faites en CSS, et avec la librairie AOS',
+      technos: ['React', 'Redux', 'SASS'],
+      githublink: 'https://github.com/SeverineB/Portfolio',
+      link: 'http://severinebianchi.com',
     },
   ],
   skills: [

@@ -5,7 +5,7 @@ import './style.scss';
 
 
 const Soft = ({ name }) => (
-  <div className="softs-item">
+  <div className="soft-item">
     <p>{name}</p>
   </div>
 );
