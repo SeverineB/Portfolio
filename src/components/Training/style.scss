@@ -72,7 +72,11 @@
         };
         @include m1900() {
           width: 15em;
+<<<<<<< HEAD
           left: 0em;
+=======
+          left: 4.5em;
+>>>>>>> db4c5fc6423434b72f2adeb002e23ce15ef1e71c
         };
       }
     }
