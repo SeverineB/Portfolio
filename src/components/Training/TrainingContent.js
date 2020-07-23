@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 
 import './style.scss';
 
-const TrainingContent = ({ info }) => (
-  <p className="training-content-item">{info}</p>
+const TrainingContent = ({ content }) => (
+  <p className="training-content-item">{content}</p>
 );
 
 TrainingContent.propTypes = {
-  info: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
 
 export default TrainingContent;

@@ -6,6 +6,8 @@ import 'aos/dist/aos.css';
 
 import './style.scss';
 
+import Techno from './Techno';
+
 AOS.init();
 
 const Project = ({
@@ -34,7 +36,7 @@ const Project = ({
           </p>
           <div className="overlay-meta-technos">
             {technos.map((techno) => (
-              <p className="techno">{techno}</p>
+              <Techno key={techno.id} {...techno} />
             ))}
           </div>
           <p className="overlay-meta-link">
@@ -57,7 +59,7 @@ const Project = ({
           </p>
           <div className="infos-meta-technos">
             {technos.map((techno) => (
-              <p className="techno">{techno}</p>
+              <Techno key={techno.id} {...techno} />
             ))}
           </div>
           <p className="infos-meta-link">
@@ -81,6 +83,7 @@ Project.propTypes = {
   description: PropTypes.string.isRequired,
   technos: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.number.isRequired,
       techno: PropTypes.string.isRequired,
     }).isRequired,
   ).isRequired,

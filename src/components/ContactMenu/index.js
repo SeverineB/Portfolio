@@ -18,15 +18,21 @@ const ContactMenu = ({ menuOpen, toggleContactMenu }) => {
       </div>
       <div className={menuOpen ? 'contact-menu-opened' : 'contact-menu'}>
         <div className="contact-menu-opened-items">
-          <a href="https://github.com/SeverineB" target="blank">
-            <img src={githubIcon} alt="contact" />
-          </a>
-          <a href="http://www.linkedin.com/in/severine-bianchi" target="blank">
-            <img src={linkedinIcon} alt="contact" />
-          </a>
-          <a href="https://twitter.com/Gnookiie" target="blank">
-            <img src={twitterIcon} alt="contact" />
-          </a>
+          <div className="contact-menu-opened-items-link">
+            <a href="https://github.com/SeverineB" target="blank">
+              <img src={githubIcon} alt="contact" />
+            </a>
+          </div>
+          <div className="contact-menu-opened-items-link">
+            <a href="http://www.linkedin.com/in/severine-bianchi" target="blank">
+              <img src={linkedinIcon} alt="contact" />
+            </a>
+          </div>
+          <div className="contact-menu-opened-items-link">
+            <a href="https://twitter.com/Gnookiie" target="blank">
+              <img src={twitterIcon} alt="contact" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

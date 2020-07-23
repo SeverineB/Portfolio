@@ -17,7 +17,7 @@ const NavLink = ({ path, name }) => (
   </Link>
 );
 
-Link.propTypes = {
+NavLink.propTypes = {
   path: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 };

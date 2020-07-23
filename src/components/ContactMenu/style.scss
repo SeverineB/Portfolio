@@ -64,6 +64,11 @@ button {
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+
+        &-link {
+          width: 2em;
+        }
+        
         img {
           width: 1.4em;
         }

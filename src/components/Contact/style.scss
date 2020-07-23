@@ -33,7 +33,7 @@
 }
 
 .contact-title {
-  font-family: "BioRhyme";
+  font-family: 'Poppins';
   color: $light-blue;
   font-size: 2rem;
   text-align: left;
@@ -109,11 +109,11 @@
     };
 
     &-mail, &-phone {
-      font-size: 2em;
+      font-size: 1.6em;
       margin: 1em;
 
       svg {
-        width: 2em;
+        width: 1.8em;
         @include m1024() {
           width: 1.6em;
           font-size: 3em;

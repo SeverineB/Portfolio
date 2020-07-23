@@ -7,19 +7,17 @@ import { StyledMenu } from './Menu.styled';
 
 import './style.scss';
 
-const Menu = ({ open, links, toggleOpen }) => {
-  return (
-    <div className={open ? 'overlay overlay-shown' : 'overlay'}>
-      <StyledMenu open={open} className={open ? 'opened' : ''}>
-        {links.map((link) => {
-          return (
-            <Link key={link.name} to={link.path} className="burger-menu-links-item" onClick={toggleOpen}>{link.name}</Link>
-          );
-        })}
-      </StyledMenu>
-    </div>
-  );
-};
+const Menu = ({ open, links, toggleOpen }) => (
+  <div className={open ? 'overlay overlay-shown' : 'overlay'}>
+    <StyledMenu open={open} className={open ? 'opened' : ''}>
+      {links.map((link) => {
+        return (
+          <Link key={link.name} to={link.path} className="burger-menu-links-item" onClick={toggleOpen}>{link.name}</Link>
+        );
+      })}
+    </StyledMenu>
+  </div>
+);
 
 Menu.propTypes = {
   links: PropTypes.arrayOf(

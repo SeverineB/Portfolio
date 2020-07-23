@@ -6,8 +6,6 @@ import './style.scss';
 import TrainingItem from './TrainingItem';
 import TrainingContent from './TrainingContent';
 
-/* import dotIcon from '../../assets/icons/rec.svg'; */
-
 const Training = ({ trainingList, training }) => {
   return (
     <div id="training" className="training" data-aos="zoom-in">
