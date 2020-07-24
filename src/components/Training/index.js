@@ -9,7 +9,12 @@ import TrainingContent from './TrainingContent';
 const Training = ({ trainingList, training }) => {
   return (
     <div id="training" className="training" data-aos="zoom-in">
-      <h2 className="training-title">Ma formation</h2>
+      <div className="training-title">
+        <div className="training-title-line" />
+        <h2 className="training-title-content">
+          Ma formation
+        </h2>
+      </div>
       <div className="training-infos">
         <div className="training-list">
           <ul>

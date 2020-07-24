@@ -8,7 +8,12 @@ import Content from './Content';
 const About = ({ infos }) => {
   return (
     <div id="about" className="about">
-      <h2 className="about-title">A propos de moi</h2>
+      <div className="about-title">
+        <h2 className="about-title-content">
+          A propos de moi
+        </h2>
+        <div className="about-title-line" />
+      </div>
       <div className="about-infos">
         <div className="about-content">
           {infos.map((info) => (

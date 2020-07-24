@@ -9,7 +9,12 @@ import Soft from './Soft';
 const Skills = ({ skills, softs }) => {
   return (
     <div id="skills" className="skills-list">
-      <h2 className="skills-list-title">Compétences</h2>
+      <div className="skills-list-title">
+        <h2 className="skills-list-title-content">
+          Compétences
+        </h2>
+        <div className="skills-list-title-line" />
+      </div>
       <div className="skills-list-items">
         <h3 className="skills-list-items-title">Technologies & Outils</h3>
         <div className="skills-list-items-list">

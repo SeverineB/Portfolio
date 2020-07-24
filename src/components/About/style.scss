@@ -5,18 +5,17 @@
   margin: 2em auto;
   padding: 0 0.5em;
   @include m767() {
-    width: 70%;
+    width: 80%;
     margin-left: 10%;
     margin-top: 4em;
    };
   @include m1024() {
-    width: 50%;
-    margin-left: 15%;
+    width: 70%;
+    margin-left: 10%;
     margin-top: 7em;
    };
   @include m1600() {
-    width: 40%;
-    margin-left: 15%;
+    width: 50%;
     margin-top: 7em;
   };
   @include m1900() {
@@ -29,46 +28,62 @@
     padding: 0.5em;
   }
 
-  &-title {
-    font-family: 'Poppins';
-    text-align: left;
-    padding-top: 1em;
-    padding-left: 0.5em;
-    font-size: 2em;
-    color: $light-blue;
-    position: relative;
-    @include m1024() {
-      margin-right: -20%;
-     };
+  // ABOUT SECTION TITLE
 
-     &::after {
-      content: '';
-      display: block;
+  &-title {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    @include m1024() {
+      height: 20%;
+    };
+    @include m1600() {
+      justify-content: flex-start;
+    };
+    &-content {
+      display: inline-block;
+      font-family: 'Poppins';
+      text-align: center;
+      font-size: 1.1em;
+      color: $light-blue;
+      margin-right: 0.5em;
       position: relative;
-      width: 20%;
-      height: 1px;
-      background: rgb(211, 208, 208, 0.5);
-      top: -0.4em;
-      left: 70%;
-      margin-left: 0.5em;
+      @include m375() {
+        font-size: 1.2em;
+       };
       @include m767() {
-        left: 55%;
-        width: 40%;
+        font-size: 1.8em;
+        text-align: left;
+        padding-left: 0.5em;
+        margin-right: 1em;
       };
       @include m1024() {
-        left: 50%;
-        width: 8em;
+        padding-left: 0;
+      };
+    }
+
+     &-line {
+      width: 40%;
+      height: 1px;
+      background: rgb(211, 208, 208, 0.5);
+      @include m375() {
+        width: 45%;
+       };
+      @include m767() {
+        width: 50%;
+       };
+      @include m1024() {
+        width: 40%;
       };
       @include m1600() {
-        left: 9em;
-        width: 10em;
+        width: 45%;
       };
-      @include m1900() {
-        left: 9em;
-        width: 15em;
-      };
-     }
+    }
   }
+
+  // ABOUT SECTION CONTENT
 
   &-content {
     &-infos {
@@ -78,9 +93,12 @@
       font-size: 0.9em;
       font-weight: 500;
       line-height: 1.3em;
+      @include m767() {
+        font-size: 1.2em;
+        margin-top: 1em;
+       };
       @include m1024() {
-       font-size: 1.1em;
-       margin-top: 1em;
+        margin-top: 1em;
       };
       @include m1900() {
         line-height: 1.3em;

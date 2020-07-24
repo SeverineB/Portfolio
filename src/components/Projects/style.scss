@@ -15,7 +15,7 @@
     margin-top: 4em;
   };
   @include m1024() {
-    width: 80%;
+    width: 70%;
     margin-left: 20%;
     margin-top: 7em;
   };
@@ -43,52 +43,58 @@
   }
 
   &-title {
-    font-family: 'Poppins';
-    color: $light-blue;
-    display: inline-block;
-    margin: 0;
-    font-size: 2rem;
-    text-align: left;
-    padding-left: 0.5em;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
     @include m767() {
-      width: 100%;
-      text-align: right;
-      padding-right: 1em;
+      height: 20%;
+      margin-bottom: 1em;
     };
     @include m1024() {
-      width: 100%;
-      text-align: right;
-      margin-bottom: 3em;
+      height: 20%;
+      margin-bottom: 1.5em;
     };
-   
-    &::after {
-      content: '';
-      display: block;
+    @include m1600() {
+      justify-content: flex-end;
+    };
+
+    &-content {
+      font-family: 'Poppins';
+      color: $light-blue;
+      display: inline-block;
+      margin-left: 0.5em;
+      font-size: 1.1em;
+      text-align: left;
       position: relative;
-      width: 60%;
+      @include m375() {
+        font-size: 1.2em;
+      };
+      @include m767() {
+        font-size: 1.8em;
+        text-align: right;
+      };
+  }
+
+    &-line {
+      width: 70%;
       height: 1px;
       background: rgb(211, 208, 208, 0.5);
-      top: -0.4em;
-      left: 30%;
-      margin-left: 0.5em;
+      @include m375() {
+        width: 70%;
+       };
       @include m767() {
-        width: 40%;
+        width: 59%;
       };
       @include m1024() {
-        left: 10.5em;
-        width: 8em;
-      };
-      @include m1600() {
-        left: 13em;
-        width: 10em;
+        width: 40%;
       };
       @include m1900() {
-        left: 17em;
-        width: 15em;
+        width: 30%;
       };
     }
   }
-}
 
 .projet-item {
   position: relative;
@@ -314,4 +320,5 @@
     display: block;
     max-width: 100%;
   }
+}
 }

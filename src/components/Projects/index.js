@@ -11,7 +11,12 @@ const Projects = ({
 }) => {
   return (
     <div id="projets" className="projet-list">
-      <h2 className="projet-list-title">Projets</h2>
+      <div className="projet-list-title">
+        <div className="projet-list-title-line" />
+        <h2 className="projet-list-title-content">
+          Projets
+        </h2>
+      </div>
       <div className="projet-list-items">
         {projets.map((projet) => (
           <Project key={projet.id} isShown={isShown} {...projet} />

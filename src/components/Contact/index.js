@@ -11,7 +11,12 @@ const Contact = ({ email, phone }) => {
     <>
       <ContactMenu />
       <div id="contact" className="contact">
-        <h2 className="contact-title">Me contacter</h2>
+        <div className="contact-title">
+          <h2 className="contact-title-content">
+            Me contacter
+          </h2>
+          <div className="contact-title-line" />
+        </div>
         <div className="contact-list">
           <div className="contact-list-mail">
             <a href={email} className="contact-list-email-icon">

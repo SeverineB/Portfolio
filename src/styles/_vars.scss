@@ -15,6 +15,18 @@ $dark-purple: #490098;
 
 // MEDIA QUERIES
 
+@mixin m375($size: 375px) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin m400($size: 400px) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
 @mixin m767($size: 767px) {
     @media (min-width: $size) {
       @content;

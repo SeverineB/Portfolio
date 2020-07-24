@@ -9,7 +9,7 @@
   padding: 0.5em 0.5em;
   max-width: 100%;
   @include m767() {
-    width: 70%;
+    width: 80%;
     margin-left: 10%;
     margin-top: 4em;
    };
@@ -28,42 +28,57 @@
    };
 
   &-title {
-    font-family: 'Poppins';
-    color: $light-blue;
-    font-size: 2rem;
-    text-align: left;
-    padding-left: 0.5em;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1em;
     @include m1024() {
-      margin-bottom: 2em;
+      height: 20%;
+      margin-bottom: 1.5em;
      };
     @include m1600() {
-      margin-bottom: 3em;
+      justify-content: flex-start;
      };
-
-    &::after {
-      content: '';
-      display: block;
+     &-content {
+      display: inline-block;
+      font-family: 'Poppins';
+      text-align: center;
+      font-size: 1.1em;
+      color: $light-blue;
+      margin-right: 0.5em;
       position: relative;
-      width: 30%;
+      @include m375() {
+        font-size: 1.2em;
+       };
+      @include m767() {
+        font-size: 1.8em;
+        text-align: left;
+        padding-left: 0.5em;
+        margin-right: 1em;
+      };
+      @include m1024() {
+        padding-left: 0;
+      };
+     }
+     &-line {
+      width: 40%;
       height: 1px;
       background: rgb(211, 208, 208, 0.5);
-      top: -0.4em;
-      left: 60%;
-      margin-left: 0.5em;
+      @include m375() {
+        width: 45%;
+       };
+      @include m767() {
+        width: 50%;
+       };
       @include m1024() {
-        left: 7em;
-        width: 6em;
-       };
-       @include m1600() {
-        left: 7em;
-        width: 10em;
-       };
-       @include m1900() {
-        left: 7.5em;
-        width: 15em;
-       };
-    }
+        width: 40%;
+      };
+      @include m1600() {
+        width: 45%;
+      };
+     }
   }
 
   &-items {
