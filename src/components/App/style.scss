@@ -1,8 +1,10 @@
 @import 'src/styles/vars';
 
 .App {
+  width: 100%;
   text-align: center;
-  margin: 1em;
+  margin: 1em auto;
+  box-sizing: border-box;
 }
 
 .particles {
@@ -16,7 +18,7 @@
 .arrow-top {
   position: fixed;
   bottom: 0.5em;
-  right: 0;
+  right: 1.5em;
   width: 2em;
   @include m1600() {
     width: 2.6em;

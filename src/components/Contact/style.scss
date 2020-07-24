@@ -32,6 +32,8 @@
   };
 }
 
+// CONTACT SECTION TITLE
+
 .contact-title {
   display: flex;
     width: 100%;
@@ -85,6 +87,8 @@
   }
 }
 
+// CONTACT SECTION CONTENT
+
 .contact-list {
   display: flex;
   justify-content: space-around;
@@ -92,8 +96,7 @@
   margin: auto auto;
   text-align: left;
   color: $light-grey;
-  border: 1px solid rgb(211, 208, 208, 0.5);
-  
+  border: 1px solid rgb(211, 208, 208, 0.5);  
   @include m767() {
     flex-direction: row;
     align-items: center;
@@ -161,34 +164,6 @@
             fill: $light-blue;	
           }
         } 
-
-      /*  #Shape1 {
-          fill: $light-grey;
-        }
-        #Shape2 {
-          fill: blue;
-        }
-        #Shape3 {
-          fill: red;
-        }
-        #Shape4 {
-          fill: yellow;
-        }
-        #Shape5 {
-          fill: purple;
-        }
-        #Shape6 {
-          fill: white;
-        }
-        #Shape7 {
-          fill: rgb(236, 154, 46);
-        }
-        #Shape8 {
-          fill: rgb(243, 57, 218);
-        }
-        #Shape9 {
-          fill: rgb(54, 201, 238);
-        } */
-          }
-        }
+      }
+    }
   }

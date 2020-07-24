@@ -1,9 +1,8 @@
 @import 'src/styles/vars';
 
 .about {
-  max-width: 100%;
-  margin: 2em auto;
-  padding: 0 0.5em;
+  width: 100vw;
+  margin: 2em 0;
   @include m767() {
     width: 80%;
     margin-left: 10%;
@@ -23,10 +22,6 @@
     margin-left: 15%;
     margin-top: 13em;
     };
-
-  &-infos {
-    padding: 0.5em;
-  }
 
   // ABOUT SECTION TITLE
 
@@ -86,27 +81,39 @@
   // ABOUT SECTION CONTENT
 
   &-content {
+    width: 100vw;
     &-infos {
-      color: $light-pink;
-      text-align: justify;
-      font-family: 'Montserrat';
-      font-size: 0.9em;
-      font-weight: 500;
-      line-height: 1.3em;
-      @include m767() {
-        font-size: 1.2em;
-        margin-top: 1em;
-       };
-      @include m1024() {
-        margin-top: 1em;
-      };
-      @include m1900() {
-        line-height: 1.3em;
-      };
-    }
+    color: $light-pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    &-item {
-      margin-top: 0.5em;
+    @include m375() {
+      font-size: 1em;
+      };
+    @include m767() {
+      font-size: 1.2em;
+      margin-top: 1em;
+      };
+    @include m1024() {
+      margin-top: 1em;
+    };
+    @include m1900() {
+      line-height: 1.3em;
+    };
+  }
+
+  &-item {
+    display: inline-block;
+    margin: 0;
+    width: 97%;
+    text-align: justify;
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.3em;
+    margin-top: 0.5em;
+    padding: .5em;
     }
   }
 }

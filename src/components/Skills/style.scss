@@ -4,10 +4,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin : 3em auto;
   margin-bottom: 0;
-  padding: 0.5em 0.5em;
-  max-width: 100%;
+  padding: 0.5em 0;
+  width: 100vw;
   @include m767() {
     width: 80%;
     margin-left: 10%;
@@ -82,8 +83,10 @@
   }
 
   &-items {
+    width: 94%;
     padding: 1.5em;
     font-family: 'Montserrat';
+    margin-right: 0.6em;
     margin-top: 0.5em;
     flex-wrap: wrap;
     justify-content: center;
@@ -103,7 +106,6 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      width: 100%;
       height: 100%;
       margin: 0 auto;
       @include m1900() {

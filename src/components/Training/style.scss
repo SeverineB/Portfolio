@@ -1,9 +1,9 @@
 @import 'src/styles/vars';
 
 .training {
-  max-width: 100%;
-  margin: 2em auto;
-  padding: 0 0.5em;
+  width: 100vw;
+  margin: 2em 0;
+  /* padding: 0 0.5em; */
   @include m767() {
     width: 80%;
     margin-left: 10%;
@@ -111,11 +111,14 @@
     }
 
     &-content {
-      margin: 0.5em;
+      width: 100vw;
+      padding: 0.2em;
+      padding-left: 0.4em;
       text-align: justify;
       line-height: 1.3em;
 
       &-item {
+        width: 95%;
         font-size: 1em;
         color: $light-pink;
         margin-top: 0.5em;
