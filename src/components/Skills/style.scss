@@ -8,6 +8,7 @@
   margin : 3em auto;
   margin-bottom: 0;
   padding: 0.5em 0;
+  padding-left: .5em;
   width: 100vw;
   @include m767() {
     width: 80%;
@@ -171,6 +172,8 @@
 }
 
 .soft-list-items {
+  width: 94%;
+  margin-right: 0.6em;
   padding: 0.5em;
   border: 1px solid rgb(211, 208, 208, 0.5);
   color: $light-grey;

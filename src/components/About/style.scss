@@ -82,6 +82,9 @@
 
   &-content {
     width: 100vw;
+    @include m767() {
+      width: 100%;
+      };
     &-infos {
     color: $light-pink;
     display: flex;
@@ -114,6 +117,7 @@
     line-height: 1.3em;
     margin-top: 0.5em;
     padding: .5em;
+    padding-left: 1em;
     }
   }
 }
