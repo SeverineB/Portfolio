@@ -12,7 +12,15 @@ const Menu = ({ open, links, toggleOpen }) => (
     <StyledMenu open={open} className={open ? 'opened' : ''}>
       {links.map((link) => {
         return (
-          <Link key={link.name} to={link.path} className="burger-menu-links-item" onClick={toggleOpen}>{link.name}</Link>
+          <Link
+            key={link.name}
+            to={link.path}
+            offset={-100}
+            className="burger-menu-links-item"
+            onClick={toggleOpen}
+          >
+            {link.name}
+          </Link>
         );
       })}
     </StyledMenu>

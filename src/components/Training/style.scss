@@ -15,6 +15,11 @@
     margin-top: 7em;
    };
   @include m1600() {
+    width: 50%;
+    margin-left: 45%;
+    margin-top: 7em;
+  };
+  @include m1900() {
     width: 40%;
     margin-left: 45%;
     margin-top: 7em;
@@ -98,6 +103,9 @@
           font-size: 1.2em;
           margin-top: 1em;
          };
+        @include m1600() {
+        font-size: 0.9em;
+        };
         p {
           text-align: left;
         }
@@ -116,7 +124,9 @@
       padding-left: 0.4em;
       text-align: justify;
       line-height: 1.3em;
-
+      @include m1600() {
+        width: 100%;
+      };
       &-item {
         width: 95%;
         font-size: 1em;
@@ -125,6 +135,10 @@
         @include m767() {
           font-size: 1.2em;
          };
+         @include m1600() {
+          font-size: 0.9em;
+          width: 100%;
+        };
       }
     }
 }

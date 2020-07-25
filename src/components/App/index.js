@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Particles from 'react-particles-js';
 
@@ -12,6 +13,7 @@ import Skills from '../../containers/Skills';
 import Training from '../../containers/Training';
 import Contact from '../../containers/Contact';
 import Footer from '../../containers/Footer';
+import Error404 from '../Error404';
 
 import arrowTop from '../../assets/icons/up-arrow.svg';
 
@@ -48,75 +50,84 @@ const App = ({ showButton, hideButton, buttonShown }) => {
   });
   return (
     <div className="App">
-      <Particles
-        className="particles"
-        params={{
-            "particles": {
-                  'number': {
-                      "value": 100,
-                      "density": {
-                          "enable": false
-                      }
-                  },
-                  "size": {
-                      "value": 2,
-                      "random": true,
-                      "anim": {
-                          "speed": 2,
-                          "size_min": 0.3
-                      }
-                  },
-                  "line_linked": {
-                      "enable": false
-                  },
-                  "move": {
-                      "random": true,
-                      "speed": 1,
-                      "direction": "top",
-                      "out_mode": "out"
-                  }
-              },
-              "interactivity": {
-                  "events": {
-                      "onhover": {
-                          "enable": true,
-                          "mode": "bubble"
-                      },
-                      "onclick": {
-                          "enable": true,
-                          "mode": "repulse"
-                      }
-                  },
-                  "modes": {
-                      "bubble": {
-                          "distance": 250,
-                          "duration": 2,
-                          "size": 0,
-                          "opacity": 0
-                      },
-                      "repulse": {
-                          "distance": 400,
-                          "duration": 4
-                      }
-                  }
-              }
-        }}
-      />
-      <NavBar />
-      <Header />
-      <SideMenu />
-      <ContactMenu />
-      <About />
-      <Projects />
-      <Skills />
-      <Training />
-      <Contact />
-      <Footer />
-      {buttonShown && (
-        <button type="button" onClick={scrollTop}>
-          <img className="arrow-top scrollTop" src={arrowTop} alt="arrow-top" />
-        </button>
-      )}
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Particles
+              className="particles"
+              params={{
+                  "particles": {
+                        'number': {
+                            "value": 100,
+                            "density": {
+                                "enable": false
+                            }
+                        },
+                        "size": {
+                            "value": 2,
+                            "random": true,
+                            "anim": {
+                                "speed": 2,
+                                "size_min": 0.3
+                            }
+                        },
+                        "line_linked": {
+                            "enable": false
+                        },
+                        "move": {
+                            "random": true,
+                            "speed": 1,
+                            "direction": "top",
+                            "out_mode": "out"
+                        }
+                    },
+                    "interactivity": {
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "bubble"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "repulse"
+                            }
+                        },
+                        "modes": {
+                            "bubble": {
+                                "distance": 250,
+                                "duration": 2,
+                                "size": 0,
+                                "opacity": 0
+                            },
+                            "repulse": {
+                                "distance": 400,
+                                "duration": 4
+                            }
+                        }
+                    }
+              }}
+            />
+            <NavBar />
+            <Header />
+            <SideMenu />
+            <ContactMenu />
+            <About />
+            <Projects />
+            <Skills />
+            <Training />
+            <Contact />
+            <Footer />
+            {buttonShown && (
+              <button type="button" onClick={scrollTop}>
+                <img className="arrow-top scrollTop" src={arrowTop} alt="arrow-top" />
+              </button>
+            )}
+          </Route>
+          <Route>
+            <Error404 />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 };

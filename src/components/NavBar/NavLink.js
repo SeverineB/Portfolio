@@ -11,6 +11,7 @@ const NavLink = ({ path, name }) => (
     spy
     duration={2000}
     className="navbar-item doubleDashed"
+    offset={-100}
     key={name}
   >
     {name}

@@ -108,11 +108,11 @@
     };
   @include m1600() {
     width: 50%;
-    margin-left: 2em;
+    margin-left: 4em;
     };
   @include m1900() {
-    width: 60%;
-    margin-left: 9em;
+    width: 50%;
+    margin-left: 5em;
     };
 
     &-mail, &-phone {
@@ -126,7 +126,7 @@
           font-size: 3em;
           };
         @include m1600() {
-          width: 1.8em;
+          width: 1.4em;
           };
         @include m1900() {
           width: 1.2em;
