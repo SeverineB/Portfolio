@@ -25,6 +25,7 @@ const Project = ({
         src={thumbnail}
         className="projet-item-thumbnail"
         alt={alt}
+        loading="lazy"
       />
       <div className="overlay">
         <div className="overlay-meta" data-aos="fade-right">
