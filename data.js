@@ -70,7 +70,7 @@ export default {
     {
       id: 1,
       name: 'Oshop',
-      thumbnail: './assets/images/Oshop-thumbnail.jpg',
+      thumbnail: './assets/images/Oshop-thumb.jpg',
       alt: 'baskets',
       description: 'Site e-commerce de vente de chaussures avec base de données MySql',
       technos: [
@@ -101,7 +101,7 @@ export default {
     {
       id: 2,
       name: 'Oshop Backoffice',
-      thumbnail: './assets/images/Oshopback-thumbnail.PNG',
+      thumbnail: './assets/images/OshopBack-thumb.jpg',
       alt: 'backoffice',
       description: 'Backoffice d\'un site e-commerce avec gestion des produits et des utilisateurs',
       technos: [
@@ -138,7 +138,7 @@ export default {
     {
       id: 3,
       name: 'Blog React',
-      thumbnail: './assets/images/BlogReact-thumbnail.PNG',
+      thumbnail: './assets/images/Blog-react-thumb.jpg',
       alt: 'blog react',
       description: 'Blog créé avec React sur des sujets liés au développement web',
       technos: [
@@ -161,7 +161,7 @@ export default {
     {
       id: 4,
       name: 'Chatroom',
-      thumbnail: './assets/images/Chatroom-thumbnail.PNG',
+      thumbnail: './assets/images/Chatroom-thumb.jpg',
       alt: 'chatroom',
       description: 'Application de messagerie en temps réel créée avec React/Redux et socket.io pour les WebSockets',
       technos: [
@@ -196,7 +196,7 @@ export default {
     {
       id: 5,
       name: 'O\'Recipe',
-      thumbnail: './images/Orecipe-thumbnail.PNG',
+      thumbnail: './assets/images/Orecipes-thumb.jpg',
       alt: 'site de recettes',
       description: 'Site de recettes avec connexion utilisateur et serveur Node.js',
       technos: [
@@ -223,7 +223,7 @@ export default {
     {
       id: 6,
       name: 'Undefined V.1',
-      thumbnail: './assets/images/Undefined-thumbnail.PNG',
+      thumbnail: './assets/images/Undefined-thumb.jpg',
       alt: 'undefined',
       description: 'Site plateforme proposant des outils pour les joueurs de jeux de rôle, crée avec React/Redux, et une API créée avec Symfony',
       technos:
@@ -259,7 +259,7 @@ export default {
     {
       id: 7,
       name: 'Portfolio V.1',
-      thumbnail: './assets/images/Portfolio-thumbnail.PNG',
+      thumbnail: './assets/images/Portfolio-thumb.jpg',
       alt: 'portfolio',
       description: 'Portfolio codé avec React/Redux, animations faites en CSS, et avec la librairie AOS',
       technos: [

@@ -21,12 +21,6 @@ const Project = ({
 }) => {
   return (
     <div className="projet-item" data-aos="zoom-in">
-      <img
-        src={thumbnail}
-        className="projet-item-thumbnail"
-        alt={alt}
-        loading="lazy"
-      />
       <div className="overlay">
         <div className="overlay-meta" data-aos="fade-right">
           <h3 className="overlay-meta-title">
@@ -73,6 +67,12 @@ const Project = ({
           </p>
         </div>
       </div>
+      <img
+        src={thumbnail}
+        className="projet-item-thumbnail"
+        alt={alt}
+        loading="lazy"
+      />
     </div>
   );
 };
