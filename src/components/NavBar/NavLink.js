@@ -8,7 +8,7 @@ const NavLink = ({ path, name }) => (
   <Link
     to={path}
     smooth
-    spy
+   /*  spy */
     duration={2000}
     className="navbar-item doubleDashed"
     offset={-100}

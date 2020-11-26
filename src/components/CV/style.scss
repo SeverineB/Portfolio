@@ -1,0 +1,109 @@
+@import 'src/styles/vars';
+
+.download-CV {
+  max-width: 100%;
+  padding: 0 0.5em;
+  margin-top: 4em;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include m767() {
+    width: 80%;
+    margin-left: 15%;
+    height: 15vh;
+    margin-top: 4em;
+   };
+  @include m1024() {
+    width: 50%;
+    margin-left: 42%;
+    margin-bottom: 7em;
+   };
+  @include m1600() {
+    width: 40%;
+    margin-left: 50%;
+    margin-bottom: 3em;
+  };
+  @include m1900() {
+    width: 30%;
+  };
+}
+
+.download-CV-title {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  @include m767() {
+    height: 20%;
+  };
+  @include m1024() {
+    height: 20%;
+    margin-bottom: 1.5em;
+  };
+  @include m1600() {
+    justify-content: flex-end;
+  };
+
+  &-content {
+    font-family: 'Poppins';
+    color: $light-blue;
+    display: inline-block;
+    margin-left: 0.5em;
+    font-size: 1.1em;
+    text-align: left;
+    position: relative;
+    @include m375() {
+      font-size: 1.2em;
+    };
+    @include m767() {
+      font-size: 1.8em;
+      text-align: right;
+    };
+  }
+
+  &-line {
+    width: 50%;
+    height: 1px;
+    background: rgb(211, 208, 208, 0.5);
+    @include m375() {
+      width: 45%;
+     };
+    @include m767() {
+      width: 50%;
+     };
+    @include m1024() {
+      width: 40%;
+    };
+    @include m1600() {
+      width: 45%;
+    };
+  }
+}
+
+.download-icon {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin: 1em auto;
+  @include m1600() {
+    margin-left: 4em;
+    justify-content: flex-end;
+    };
+}
+
+.download-icon svg {
+  width: 1.8em;
+  @include m1024() {
+    width: 1.6em;
+    font-size: 3em;
+    };
+  @include m1600() {
+    width: 1.4em;
+    };
+  @include m1900() {
+    width: 1.2em;
+    };
+}

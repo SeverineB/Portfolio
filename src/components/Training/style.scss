@@ -16,7 +16,7 @@
    };
   @include m1600() {
     width: 50%;
-    margin-left: 45%;
+    margin-left: 40%;
     margin-top: 7em;
   };
   @include m1900() {
@@ -96,6 +96,7 @@
       line-height: 1.3em;
 
       &-item {
+        width: 100%;
         font-size: 1em;
         display: flex;
         margin-bottom: 0.5em;
@@ -119,7 +120,7 @@
     }
 
     &-content {
-      width: 100vw;
+      width: 100%;
       padding: 0.2em;
       padding-left: 0.4em;
       text-align: justify;
@@ -128,7 +129,7 @@
         width: 100%;
       };
       &-item {
-        width: 95%;
+        width: 100%;
         font-size: 1em;
         color: $light-pink;
         margin-top: 0.5em;

@@ -12,8 +12,9 @@ import Projects from '../../containers/Projects';
 import Skills from '../../containers/Skills';
 import Training from '../../containers/Training';
 import Contact from '../../containers/Contact';
+import CV from '../CV';
 import Footer from '../../containers/Footer';
-import Error404 from '../Error404';
+import NotFound from '../NotFound';
 
 import arrowTop from '../../assets/icons/up-arrow.svg';
 
@@ -116,6 +117,7 @@ const App = ({ showButton, hideButton, buttonShown }) => {
             <Skills />
             <Training />
             <Contact />
+            <CV />
             <Footer />
             {buttonShown && (
               <button type="button" onClick={scrollTop}>
@@ -123,8 +125,8 @@ const App = ({ showButton, hideButton, buttonShown }) => {
               </button>
             )}
           </Route>
-          <Route>
-            <Error404 />
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
       </Router>

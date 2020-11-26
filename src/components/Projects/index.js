@@ -6,7 +6,7 @@ import './style.scss';
 import Project from './Project';
 
 const Projects = ({
-  projets,
+  projetspersos,
   isShown,
 }) => {
   return (
@@ -14,11 +14,11 @@ const Projects = ({
       <div className="projet-list-title">
         <div className="projet-list-title-line" />
         <h2 className="projet-list-title-content">
-          Projets
+          Projets personnels
         </h2>
       </div>
       <div className="projet-list-items">
-        {projets.map((projet) => (
+        {projetspersos.map((projet) => (
           <Project key={projet.id} isShown={isShown} {...projet} />
         ))}
       </div>
@@ -27,7 +27,7 @@ const Projects = ({
 };
 
 Projects.propTypes = {
-  projets: PropTypes.arrayOf(
+  projetspersos: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
     }).isRequired,

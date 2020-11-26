@@ -65,203 +65,112 @@ export default {
       name: 'Contact',
       path: 'contact',
     },
-  ],
-  projets: [
     {
-      id: 1,
-      name: 'Oshop',
-      thumbnail: './assets/images/Oshop-thumb.jpg',
-      alt: 'baskets',
-      description: 'Site e-commerce de vente de chaussures avec base de données MySql',
+      id: 6,
+      name: 'CV',
+      path: 'CV',
+    },
+  ],
+  projetspersos: [
+    {
+      id: 4,
+      name: 'My Pets Diary',
+      thumbnail: './assets/images/emptyCapture.JPG',
+      alt: 'petsdiary',
+      description: 'Projet en cours - Carnet de santé de ses animaux de compagnie en ligne, avec suivi de leurs soins et RDV',
       technos: [
         {
           id: 1,
-          techno: 'PHP',
+          techno: 'MongoDB',
         },
         {
           id: 2,
-          techno: 'Bootstrap',
+          techno: 'Express',
         },
         {
           id: 3,
-          techno: 'MySQL',
+          techno: 'React',
         },
         {
           id: 4,
-          techno: 'MVC',
+          techno: 'Redux',
         },
         {
           id: 5,
-          techno: 'Altorouter',
+          techno: 'NodeJs',
         },
       ],
-      githublink: 'https://github.com/SeverineB/Oshop',
-      link: 'http://oshop.severinebianchi.com',
+      githublink: '',
+      link: '',
+    },
+    {
+      id: 3,
+      name: 'The Metadata Viewer',
+      thumbnail: './assets/images/Capture1.PNG',
+      alt: 'metadataviewer',
+      description: 'Site permettant de visualiser les métadonnées EXIF d\'une photo, développé avec React, serveur Node.js et base de données MongoDB',
+      technos: [
+        {
+          id: 1,
+          techno: 'MongoDB',
+        },
+        {
+          id: 2,
+          techno: 'Express',
+        },
+        {
+          id: 3,
+          techno: 'React',
+        },
+        {
+          id: 4,
+          techno: 'Redux',
+        },
+        {
+          id: 5,
+          techno: 'NodeJs',
+        },
+      ],
+      githublink: 'https://github.com/SeverineB/MetadataViewer-front',
+      link: 'http://metadata-viewer.severinebianchi.com/',
     },
     {
       id: 2,
-      name: 'Oshop Backoffice',
-      thumbnail: './assets/images/OshopBack-thumb.jpg',
-      alt: 'backoffice',
-      description: 'Backoffice d\'un site e-commerce avec gestion des produits et des utilisateurs',
+      name: 'Toodolist',
+      thumbnail: './assets/images/Todolist-capture.png',
+      alt: 'toodolist',
+      description: 'Site de gestion de tâches conservées en BDD (mise à jour, archivage, suppression), avec différents thèmes d\'affichage',
       technos: [
         {
           id: 1,
+          techno: 'Javascript',
+        },
+        {
+          id: 2,
+          techno: 'CSS',
+        },
+        {
+          id: 3,
           techno: 'PHP',
         },
         {
-          id: 2,
-          techno: 'Bootstrap',
+          id: 4,
+          techno: 'Laravel',
         },
         {
-          id: 3,
+          id: 5,
           techno: 'MySQL',
         },
-        {
-          id: 4,
-          techno: 'MVC',
-        },
       ],
-      githublink: 'https://github.com/SeverineB/Oshop-Backoffice',
-      link: 'http://oshop-backoffice.severinebianchi.com',
-    },
- /*    {
-      id: 3,
-      name: 'Todolist',
-      thumbnail: './assets/images/Todolist-capture.png',
-      alt: 'todolist',
-      description: 'Todolist avec gestion des tâches en BDD grâce à une API',
-      technos: ['PHP', 'Javascript', 'API'],
       githublink: 'https://github.com/SeverineB/Todolist',
-      link: '',
-    }, */
-    {
-      id: 3,
-      name: 'Blog React',
-      thumbnail: './assets/images/Blog-react-thumb.jpg',
-      alt: 'blog react',
-      description: 'Blog créé avec React sur des sujets liés au développement web',
-      technos: [
-        {
-          id: 1,
-          techno: 'React',
-        },
-        {
-          id: 2,
-          techno: 'Redux',
-        },
-        {
-          id: 3,
-          techno: 'Sass',
-        },
-      ],
-      githublink: 'https://github.com/SeverineB/Blog-react',
-      link: 'http://blog-react.severinebianchi.com',
+      link: 'http://todolist.severinebianchi.com',
     },
     {
-      id: 4,
-      name: 'Chatroom',
-      thumbnail: './assets/images/Chatroom-thumb.jpg',
-      alt: 'chatroom',
-      description: 'Application de messagerie en temps réel créée avec React/Redux et socket.io pour les WebSockets',
-      technos: [
-        {
-          id: 1,
-          techno: 'React',
-        },
-        {
-          id: 2,
-          techno: 'Redux',
-        },
-        {
-          id: 3,
-          techno: 'Sass',
-        },
-        {
-          id: 4,
-          techno: 'Node.js',
-        },
-        {
-          id: 5,
-          techno: 'Socket.io',
-        },
-        {
-          id: 6,
-          techno: 'Express',
-        },
-      ],
-      githublink: 'https://github.com/SeverineB/Chat',
-      link: 'http://chatroom.severinebianchi.com',
-    },
-    {
-      id: 5,
-      name: 'O\'Recipe',
-      thumbnail: './assets/images/Orecipes-thumb.jpg',
-      alt: 'site de recettes',
-      description: 'Site de recettes avec connexion utilisateur et serveur Node.js',
-      technos: [
-        {
-          id: 1,
-          techno: 'React',
-        },
-        {
-          id: 2,
-          techno: 'Redux',
-        },
-        {
-          id: 3,
-          techno: 'Node.js',
-        },
-        {
-          id: 4,
-          techno: 'Express',
-        },
-      ],
-      githublink: 'https://github.com/SeverineB/Orecipes',
-      link: 'http://orecipes.severinebianchi.com',
-    },
-    {
-      id: 6,
-      name: 'Undefined V.1',
-      thumbnail: './assets/images/Undefined-thumb.jpg',
-      alt: 'undefined',
-      description: 'Site plateforme proposant des outils pour les joueurs de jeux de rôle, crée avec React/Redux, et une API créée avec Symfony',
-      technos:
-      [
-        {
-          id: 1,
-          techno: 'React',
-        },
-        {
-          id: 2,
-          techno: 'Redux',
-        },
-        {
-          id: 3,
-          techno: 'Axios',
-        },
-        {
-          id: 4,
-          techno: 'SASS',
-        },
-        {
-          id: 5,
-          techno: 'Symfony',
-        },
-        {
-          id: 6,
-          techno: 'Doctrine',
-        },
-      ],
-      githublink: 'https://github.com/SeverineB/Undefined',
-      link: 'http://undefined.severinebianchi.com',
-    },
-    {
-      id: 7,
+      id: 1,
       name: 'Portfolio V.1',
       thumbnail: './assets/images/Portfolio-thumb.jpg',
       alt: 'portfolio',
-      description: 'Portfolio codé avec React/Redux, animations faites en CSS, et avec la librairie AOS',
+      description: 'Portfolio développé avec React/Redux, animations faites en CSS avec SASS, et avec la librairie AOS',
       technos: [
         {
           id: 1,
@@ -278,6 +187,24 @@ export default {
       ],
       githublink: 'https://github.com/SeverineB/Portfolio',
       link: 'http://severinebianchi.com',
+      details: [
+        {
+          name: 'paraph1',
+          content: 'Ce portfolio est mon premier projet personnel, réalisé en juillet 2020 à la sortie de ma formation.',
+        },
+        {
+          name: 'paraph2',
+          content: 'Les données sont statiques, et le state est géré grâce à Redux.',
+        },
+        {
+          name: 'paraph3',
+          content: 'J\'ai utilisé des librairies comme AOS afin de gérer certaines animations type scroll, l\'animation principale du chat au chargement de la page étant quant à elle faite from scratch.',
+        },
+        {
+          name: 'paraph5',
+          content: ' J\'aime créer des interfaces agréables et interactives, à l\'UI soignée, et accessibles sur tous supports.',
+        },
+      ],
     },
   ],
   skills: [
@@ -313,6 +240,11 @@ export default {
     },
     {
       id: 7,
+      tech: 'NodeJs',
+      icon: ['fab', 'node'],
+    },
+    {
+      id: 8,
       tech: 'Sass',
       icon: ['fab', 'sass'],
     },
@@ -350,19 +282,15 @@ export default {
     },
     {
       name: 'paraph2',
-      content: ' En janvier 2020, j\'ai entamé une reconversion dans le développement web en suivant une formation intensive de 5 mois avec O\'Clock.',
+      content: ' En janvier 2020, j\'ai entamé une reconversion dans le développement web, passionnée par la création et le webdesign, il était temps pour moi de me tourner vers un domaine dans lequel j\'allais pouvoir réellement m\'épanouir !',
     },
     {
       name: 'paraph3',
-      content: ' Après de nombreuses années dans le commercial et le service client, il était temps pour moi de me tourner vers un domaine dans lequel j\'allais pouvoir réellement m\'épanouir.',
+      content: ' Ce qui me fait vibrer au quotidien ? Coder, et débugguer :D ! Afin de poursuivre mon apprentissage et d\'améliorer mes connaissances, j\'ai développé les projets présentés plus bas.',
     },
     {
       name: 'paraph4',
-      content: ' Passionnée par le Webdesign et l\'univers du Web depuis de nombreuses années, j\'ai naturellement choisi de me spécialiser dans des langages axés UI, et plus particulièrement React.js.',
-    },
-    {
-      name: 'paraph5',
-      content: ' J\'aime créer des interfaces agréables et interactives, à l\'UI soignée, et accessibles sur tous supports.',
+      content: ' Et en dehors du code ? Je suis une grande amatrice de cinéma et de lecture, plus particulièrement d\'horreur et de fantastique. Créative touche-à-tout j\'adore bricoler, et l\'un de mes plus grands rêves est de partir faire le tour du monde en famille !',
     },
   ],
   socials: [
